@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Li'Ona Archives | Locations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="logo">The Li'Ona Archives</span>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+            Menu
+          </button>
+        </div>
+        <nav id="site-nav" class="nav">
+          <a href="index.html">Home</a>
+          <a href="archive-index.html">Archive Index</a>
+          <a href="species.html">Species</a>
+          <a href="characters.html">Characters</a>
+          <a href="history.html">History</a>
+          <a href="locations.html" aria-current="page">Locations</a>
+        </nav>
+        <div class="sidebar-card">
+          Map the sanctuaries, city-states, and wild frontiers of Li'Ona.
+        </div>
+      </aside>
+
+      <div class="content">
+        <main id="main">
+          <header class="reveal">
+            <h1 class="page-title">Location Atlas</h1>
+            <p class="page-subtitle">
+              Discover the realms where Li'Ona civilizations thrive, from floating groves to hidden reefs.
+            </p>
+          </header>
+
+          <section class="search-panel reveal">
+            <h2>Search locations</h2>
+            <form>
+              <div class="search-field">
+                <label for="location-search">Keyword search</label>
+                <input
+                  class="search-input"
+                  id="location-search"
+                  name="location-search"
+                  placeholder="Search by realm, biome, or landmark"
+                  type="search"
+                />
+              </div>
+              <div class="grid">
+                <div class="search-field">
+                  <label for="location-region">Region</label>
+                  <select class="search-select" id="location-region" name="location-region">
+                    <option>All regions</option>
+                    <option>Skybound Terraces</option>
+                    <option>Mirror Sea</option>
+                    <option>Obsidian Belt</option>
+                  </select>
+                </div>
+                <div class="search-field">
+                  <label for="location-era">Era</label>
+                  <select class="search-select" id="location-era" name="location-era">
+                    <option>All eras</option>
+                    <option>Founding Dawn</option>
+                    <option>Crystal Age</option>
+                    <option>Radiant Age</option>
+                  </select>
+                </div>
+                <div class="search-field">
+                  <label for="location-status">Status</label>
+                  <select class="search-select" id="location-status" name="location-status">
+                    <option>All statuses</option>
+                    <option>Active</option>
+                    <option>Shrouded</option>
+                    <option>Ruins</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="grid reveal">
+            <article class="card">
+              <span class="card-tag">Sky sanctuary</span>
+              <div class="card-title">The Aetheric Grove</div>
+              <p>Floating forests where the sky-bloom trees sing with ambient light.</p>
+            </article>
+            <article class="card">
+              <span class="card-tag">Oceanic</span>
+              <div class="card-title">Mirror Sea Reefs</div>
+              <p>Prismatic reefs that reflect the past in their luminous coral.</p>
+            </article>
+            <article class="card">
+              <span class="card-tag">Citadel</span>
+              <div class="card-title">Citadel of Nine Currents</div>
+              <p>A rotating city-state powered by tidal energy and ancient glyphs.</p>
+            </article>
+          </section>
+
+          <section class="faq reveal">
+            <h2 class="page-title">FAQ</h2>
+            <details>
+              <summary>Are all locations open to travelers?</summary>
+              <p>No. Some realms are sealed or require resonance keys to access safely.</p>
+            </details>
+            <details>
+              <summary>How do I request a location update?</summary>
+              <p>Submit coordinates through the archive council for verification and cataloging.</p>
+            </details>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-links">
+            <a href="archive-index.html">Index</a>
+            <a href="species.html">Species</a>
+            <a href="characters.html">Characters</a>
+            <a href="history.html">History</a>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Visit the Li'Ona Archives on Lumina">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.7 7.2 18l.9-5.4L4.2 8.7l5.4-.8L12 3z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit the Li'Ona Archives on Echo">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M4 4h16v12H7l-3 3V4zm4 5h8v2H8V9zm0-4h8v2H8V5z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit the Li'Ona Archives on Orbit">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3a7 7 0 017 7h-7V5zm-7 7a7 7 0 017-7v7H5z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p>© <span id="year"></span> The Li'Ona Archives. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

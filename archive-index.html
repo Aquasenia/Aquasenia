@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Li'Ona Archives | Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="logo">The Li'Ona Archives</span>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+            Menu
+          </button>
+        </div>
+        <nav id="site-nav" class="nav">
+          <a href="index.html">Home</a>
+          <a href="archive-index.html" aria-current="page">Archive Index</a>
+          <a href="species.html">Species</a>
+          <a href="characters.html">Characters</a>
+          <a href="history.html">History</a>
+          <a href="locations.html">Locations</a>
+        </nav>
+        <div class="sidebar-card">
+          Every entry in one place, from biographies to mythic artifacts.
+        </div>
+      </aside>
+
+      <div class="content">
+        <main id="main">
+          <header class="reveal">
+            <h1 class="page-title">Archive Index</h1>
+            <p class="page-subtitle">
+              A complete vertical list of all recorded entries, each tagged by archive category.
+            </p>
+          </header>
+
+          <section class="search-panel reveal">
+            <h2>Search the archive</h2>
+            <form>
+              <div class="search-field">
+                <label for="index-search">Keyword search</label>
+                <input
+                  class="search-input"
+                  id="index-search"
+                  name="index-search"
+                  placeholder="Search by title, relic, or glyph"
+                  type="search"
+                />
+              </div>
+              <div class="grid">
+                <div class="search-field">
+                  <label for="index-category">Category</label>
+                  <select class="search-select" id="index-category" name="index-category">
+                    <option>All categories</option>
+                    <option>Species</option>
+                    <option>Characters</option>
+                    <option>History</option>
+                    <option>Locations</option>
+                  </select>
+                </div>
+                <div class="search-field">
+                  <label for="index-era">Era</label>
+                  <select class="search-select" id="index-era" name="index-era">
+                    <option>All eras</option>
+                    <option>Founding Dawn</option>
+                    <option>Crystal Age</option>
+                    <option>Convergence Era</option>
+                  </select>
+                </div>
+                <div class="search-field">
+                  <label for="index-theme">Attribute</label>
+                  <select class="search-select" id="index-theme" name="index-theme">
+                    <option>All attributes</option>
+                    <option>Diplomacy</option>
+                    <option>Exploration</option>
+                    <option>Magitech</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="index-list reveal">
+            <article class="card index-card">
+              <div class="icon-badge">S</div>
+              <div>
+                <div class="card-title">The Veyari Echo-Born</div>
+                <p class="card-tag">Species</p>
+                <p>Symbiotic navigators attuned to sonic maps hidden within cosmic tides.</p>
+              </div>
+            </article>
+            <article class="card index-card">
+              <div class="icon-badge">C</div>
+              <div>
+                <div class="card-title">Archivist Liora Kesh</div>
+                <p class="card-tag">Character</p>
+                <p>The living memory of Li'Ona's archivists and their illuminated codex.</p>
+              </div>
+            </article>
+            <article class="card index-card">
+              <div class="icon-badge">H</div>
+              <div>
+                <div class="card-title">The Night of Ten Auroras</div>
+                <p class="card-tag">History</p>
+                <p>The treaty that ended the Astral Rift conflict during a rare aurora storm.</p>
+              </div>
+            </article>
+            <article class="card index-card">
+              <div class="icon-badge">L</div>
+              <div>
+                <div class="card-title">The Aetheric Grove</div>
+                <p class="card-tag">Location</p>
+                <p>Sky-blooming forests that float above the Mirror Sea, accessible by light gates.</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="faq reveal">
+            <h2 class="page-title">FAQ</h2>
+            <details>
+              <summary>How is the index organized?</summary>
+              <p>Entries are grouped by category and tagged by era, theme, and location metadata.</p>
+            </details>
+            <details>
+              <summary>Can I export the archive data?</summary>
+              <p>Export tools are in development; subscribe to updates for upcoming releases.</p>
+            </details>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="species.html">Species</a>
+            <a href="characters.html">Characters</a>
+            <a href="history.html">History</a>
+            <a href="locations.html">Locations</a>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Visit the Li'Ona Archives on Lumina">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.7 7.2 18l.9-5.4L4.2 8.7l5.4-.8L12 3z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit the Li'Ona Archives on Echo">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M4 4h16v12H7l-3 3V4zm4 5h8v2H8V9zm0-4h8v2H8V5z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit the Li'Ona Archives on Orbit">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3a7 7 0 017 7h-7V5zm-7 7a7 7 0 017-7v7H5z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p>© <span id="year"></span> The Li'Ona Archives. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

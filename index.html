@@ -3,35 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aquasenia</title>
+    <title>The Li'Ona Archives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Aquasenia</h1>
-      <nav>
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="aspects.html">World Aspects</a>
-      </nav>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="logo">The Li'Ona Archives</span>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+            Menu
+          </button>
+        </div>
+        <nav id="site-nav" class="nav">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="archive-index.html">Archive Index</a>
+          <a href="species.html">Species</a>
+          <a href="characters.html">Characters</a>
+          <a href="history.html">History</a>
+          <a href="locations.html">Locations</a>
+        </nav>
+        <div class="sidebar-card">
+          A living archive of the Li'Ona universe, curated for builders, storytellers, and explorers.
+        </div>
+      </aside>
 
-    <main>
-      <section>
-        <h2>Base template</h2>
-        <p>This is a minimal starting point for the Aquasenia project.</p>
-      </section>
-      <section>
-        <h2>Next steps</h2>
-        <ul>
-          <li>Add content sections as needed.</li>
-          <li>Expand navigation when new pages are available.</li>
-        </ul>
-      </section>
-    </main>
+      <div class="content">
+        <main id="main">
+          <section class="hero reveal">
+            <h1>Step inside the Li'Ona universe.</h1>
+            <p>
+              Explore interstellar lineages, mythic histories, and radiant worlds with a curated archive
+              built for world-builders. Every entry reveals a new thread in the Li'Ona tapestry.
+            </p>
+            <div>
+              <a class="button" href="archive-index.html">Open the Index</a>
+              <a class="button secondary" href="history.html">Browse the Timeline</a>
+            </div>
+          </section>
 
-    <footer>
-      <p>© <span id="year"></span> Aquasenia.</p>
-    </footer>
+          <section class="reveal">
+            <h2 class="page-title">Featured highlights</h2>
+            <p class="page-subtitle">
+              One luminous entry from each major directory, ready for a deep dive into the lore.
+            </p>
+            <div class="carousel">
+              <div class="carousel-header">
+                <strong>Explore the archives</strong>
+                <div>
+                  <button class="button secondary" type="button" data-carousel="prev">Previous</button>
+                  <button class="button" type="button" data-carousel="next">Next</button>
+                </div>
+              </div>
+              <div class="carousel-track">
+                <a class="card carousel-card" href="species.html">
+                  <span class="card-tag">Species</span>
+                  <div class="card-title">The Veyari Echo-Born</div>
+                  <p>Bio-luminescent navigators who chart the rifts between star currents.</p>
+                </a>
+                <a class="card carousel-card" href="characters.html">
+                  <span class="card-tag">Characters</span>
+                  <div class="card-title">Archivist Liora Kesh</div>
+                  <p>Keeper of the memory vaults and guardian of the Resonant Codex.</p>
+                </a>
+                <a class="card carousel-card" href="history.html">
+                  <span class="card-tag">History</span>
+                  <div class="card-title">The Night of Ten Auroras</div>
+                  <p>The celestial convergence that reshaped Li'Ona diplomacy forever.</p>
+                </a>
+                <a class="card carousel-card" href="locations.html">
+                  <span class="card-tag">Locations</span>
+                  <div class="card-title">The Aetheric Grove</div>
+                  <p>An airborne sanctuary where the sky-bloom forests sing.</p>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid reveal">
+            <article class="card">
+              <span class="card-tag">Directory</span>
+              <div class="card-title">Species Compendium</div>
+              <p>Catalog the evolving biologies, cultures, and symbiotic alliances across the stars.</p>
+              <a class="button secondary" href="species.html">View species</a>
+            </article>
+            <article class="card">
+              <span class="card-tag">Directory</span>
+              <div class="card-title">Character Ledger</div>
+              <p>Meet luminaries, rebels, and archivists who define the Li'Ona narrative.</p>
+              <a class="button secondary" href="characters.html">View characters</a>
+            </article>
+            <article class="card">
+              <span class="card-tag">Directory</span>
+              <div class="card-title">Location Atlas</div>
+              <p>From floating citadels to undersea sanctuaries, map every realm.</p>
+              <a class="button secondary" href="locations.html">View locations</a>
+            </article>
+          </section>
+
+          <section class="faq reveal">
+            <h2 class="page-title">FAQ</h2>
+            <details>
+              <summary>How do I begin exploring the archive?</summary>
+              <p>Start with the Archive Index to scan every entry or jump into a category for curated lore.</p>
+            </details>
+            <details>
+              <summary>Are the entries updated regularly?</summary>
+              <p>Yes. New discoveries are logged with each chapter release and community prompt.</p>
+            </details>
+            <details>
+              <summary>Can I suggest additions to the archive?</summary>
+              <p>Absolutely—share your ideas through the community channels listed in the footer.</p>
+            </details>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-links">
+            <a href="archive-index.html">Index</a>
+            <a href="species.html">Species</a>
+            <a href="characters.html">Characters</a>
+            <a href="history.html">History</a>
+            <a href="locations.html">Locations</a>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Visit the Li'Ona Archives on Lumina">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.7 7.2 18l.9-5.4L4.2 8.7l5.4-.8L12 3z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit the Li'Ona Archives on Echo">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M4 4h16v12H7l-3 3V4zm4 5h8v2H8V9zm0-4h8v2H8V5z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit the Li'Ona Archives on Orbit">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3a7 7 0 017 7h-7V5zm-7 7a7 7 0 017-7v7H5z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p>© <span id="year"></span> The Li'Ona Archives. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
