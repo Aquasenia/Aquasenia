@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aquasenia Codex</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Obscura Archive</p>
+          <h1>Aquasenia Codex</h1>
+          <p class="lede">
+            A sealed compendium of world-building relics. Browse the aspects below to unveil
+            species, environments, and forbidden rites.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button class="ghost" id="omenButton">Whisper an omen</button>
+          <button class="ghost" id="collapseButton" aria-expanded="true">
+            Collapse all
+          </button>
+        </div>
+      </header>
+
+      <section class="omen" aria-live="polite">
+        <p class="omen-label">Current omen</p>
+        <p class="omen-text" id="omenText">The tides remember every name ever uttered.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>World Aspects</h2>
+          <p>Tap a sigil to reveal the hidden knowledge sealed within.</p>
+        </div>
+        <div class="aspect-grid" id="aspectGrid">
+          <article class="aspect" data-aspect="species">
+            <button class="aspect-toggle" aria-expanded="true">
+              <span>Species</span>
+              <span class="sigil">☿</span>
+            </button>
+            <div class="aspect-body">
+              <p>
+                Amphibious scholars that speak through water resonance, archivists of the abyssal
+                courts.
+              </p>
+            </div>
+          </article>
+
+          <article class="aspect" data-aspect="environments">
+            <button class="aspect-toggle" aria-expanded="true">
+              <span>Environments</span>
+              <span class="sigil">✶</span>
+            </button>
+            <div class="aspect-body">
+              <p>
+                Luminous trench gardens, petrified reefs, and subaqueous cathedrals lit by lunar
+                geysers.
+              </p>
+            </div>
+          </article>
+
+          <article class="aspect" data-aspect="relics">
+            <button class="aspect-toggle" aria-expanded="true">
+              <span>Relics</span>
+              <span class="sigil">✢</span>
+            </button>
+            <div class="aspect-body">
+              <p>
+                The Thalassic reliquary, obsidian conches, and censers that trap the breaths of
+                leviathans.
+              </p>
+            </div>
+          </article>
+
+          <article class="aspect" data-aspect="rites">
+            <button class="aspect-toggle" aria-expanded="true">
+              <span>Rites</span>
+              <span class="sigil">⟁</span>
+            </button>
+            <div class="aspect-body">
+              <p>
+                Dawn rites whispered to the sea, cleansing vows, and midnight syncopations of the
+                deep.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="panel-header">
+          <h2>Sanctum Console</h2>
+          <p>Toggle ambient effects to test the sacred interface.</p>
+        </div>
+        <div class="toggle-row">
+          <label class="switch">
+            <input type="checkbox" id="mistToggle" checked />
+            <span class="slider"></span>
+            <span class="label-text">Summon mist</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="sigilToggle" checked />
+            <span class="slider"></span>
+            <span class="label-text">Let sigils drift</span>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Only the devoted may read deeper. Press <kbd>O</kbd> for another omen.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
