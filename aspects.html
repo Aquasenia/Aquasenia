@@ -1,93 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>World Aspects · Aquasenia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquasenia | World Aspects</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="veil"></div>
     <header class="site-header">
-      <div class="logo">Aquasenia</div>
       <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="aspects.html" aria-current="page">World Aspects</a>
+        <a class="logo" href="index.html">Aquasenia</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="aspects.html" aria-current="page">World Aspects</a>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="page-hero">
         <div>
-          <p class="eyebrow">Catalog of the forbidden</p>
-          <h1>World Aspects</h1>
-          <p class="subtitle">
-            Each aspect is a sealed ledger, illuminating the forces that shape Aquasenia. Explore without
-            disturbance.
+          <p class="eyebrow">World Aspects</p>
+          <h1>Explore the pillars of Aquasenia</h1>
+          <p>
+            Each aspect below opens a window into the realm's identity—from the
+            beings that roam its surface to the mysteries that pulse beneath.
           </p>
-        </div>
-        <div class="page-hero-panel">
-          <h2>Archive Index</h2>
-          <p>Scroll to witness the divisions of the realm.</p>
         </div>
       </section>
 
-      <section class="aspect-list">
-        <article>
-          <h3>Species & Lineages</h3>
+      <section class="aspect-grid">
+        <article class="aspect-card">
+          <h2>Species</h2>
           <p>
-            A census of aquatic dynasties, glass-boned wanderers, and storm-anchored guardians sworn to the
-            deep.
+            Amphibious clans, sky-warded settlers, and the luminal offspring of
+            ancient leviathans.
           </p>
-          <span class="tag">Biology</span>
+          <ul>
+            <li>Coralborn Houses</li>
+            <li>Aerial Sentinels</li>
+            <li>Gilded Whisperers</li>
+          </ul>
         </article>
-        <article>
-          <h3>Regions & Realms</h3>
+        <article class="aspect-card">
+          <h2>Environments</h2>
           <p>
-            Mystic archipelagos, drowned libraries, and ember deserts that bloom when the twin moons rise.
+            From submerged cathedrals to mist-veiled plateaus, every biome is
+            steeped in age and quiet power.
           </p>
-          <span class="tag">Geography</span>
+          <ul>
+            <li>The Drowned Meridian</li>
+            <li>Bronze Mist Isles</li>
+            <li>Glimmering Trenchways</li>
+          </ul>
         </article>
-        <article>
-          <h3>Cultures & Orders</h3>
+        <article class="aspect-card">
+          <h2>Cultures</h2>
           <p>
-            The Chorus of Tides, the Night Basilica, and the Veilbound Council maintain the world’s
-            equilibrium.
+            Societies are bound by ritual, song, and pact-keeping to keep the
+            tides in balance.
           </p>
-          <span class="tag">Society</span>
+          <ul>
+            <li>High Tide Courts</li>
+            <li>Lantern Cartographers</li>
+            <li>Veiled Archivists</li>
+          </ul>
         </article>
-        <article>
-          <h3>Artifacts & Relics</h3>
+        <article class="aspect-card">
+          <h2>Magic &amp; Mysticism</h2>
           <p>
-            Resonant anchors, memory vaults, and forbidden keys sealed in luminous obsidian.
+            Etheric tides lace through the realm, enabling resonance rites and
+            relic symphonies.
           </p>
-          <span class="tag">Relics</span>
+          <ul>
+            <li>Echo Sigils</li>
+            <li>Goldthread Wards</li>
+            <li>Depth-Calling</li>
+          </ul>
         </article>
-        <article>
-          <h3>Myths & Prophecies</h3>
+        <article class="aspect-card">
+          <h2>History</h2>
           <p>
-            The Breath of Caligo, the Silence after the Second Tide, and the song that awakens the abyss.
+            Ancient migrations, cataclysmic floods, and lost empires etched into
+            the horizon.
           </p>
-          <span class="tag">Lore</span>
+          <ul>
+            <li>The Sundering</li>
+            <li>Era of Silence</li>
+            <li>The Ascendant Accord</li>
+          </ul>
         </article>
-        <article>
-          <h3>Chronicles & Timelines</h3>
+        <article class="aspect-card">
+          <h2>Artifacts</h2>
           <p>
-            Era markers, celestial alignments, and the covenant cycles that keep Aquasenia bound together.
+            Relics of auric craft and deep-sea forging, each carrying a fragment
+            of memory.
           </p>
-          <span class="tag">History</span>
+          <ul>
+            <li>The Gilded Compass</li>
+            <li>Thalassic Keys</li>
+            <li>Crown of Tides</li>
+          </ul>
         </article>
+      </section>
+
+      <section class="callout compact">
+        <div>
+          <h2>Return to the landing page</h2>
+          <p>Need the overview again? The landing page awaits your return.</p>
+        </div>
+        <a class="button ghost" href="index.html">Back to Home</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2024 The Aquasenia Archives · Knowledge preserved, not altered.</p>
+      <p>© <span id="year"></span> Aquasenia Archive. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
