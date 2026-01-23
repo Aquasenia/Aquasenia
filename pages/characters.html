@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Li'Ona Archives | Locations</title>
+    <title>The Li'Ona Archives | Characters</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../assets/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,38 +23,38 @@
           </button>
         </div>
         <nav id="site-nav" class="nav">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
           <a href="archive-index.html">Archive Index</a>
           <a href="species.html">Species</a>
-          <a href="characters.html">Characters</a>
+          <a href="characters.html" aria-current="page">Characters</a>
           <a href="history.html">History</a>
-          <a href="locations.html" aria-current="page">Locations</a>
+          <a href="locations.html">Locations</a>
         </nav>
         <div class="sidebar-card">
-          Map the sanctuaries, city-states, and wild frontiers of Li'Ona.
+          Character dossiers spotlight the legends shaping Li'Ona's future.
         </div>
       </aside>
 
       <div class="content">
         <main id="main">
           <header class="reveal">
-            <h1 class="page-title">Location Atlas</h1>
+            <h1 class="page-title">Character Directory</h1>
             <p class="page-subtitle">
-              Discover the realms where Li'Ona civilizations thrive, from floating groves to hidden reefs.
+              Meet diplomats, mystics, and strategists who steer the fate of Li'Ona.
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="location-list">
-            <h2>Search locations</h2>
+          <section class="search-panel reveal" data-filter-target="character-list">
+            <h2>Search characters</h2>
             <form>
               <div class="search-field">
-                <label for="location-search">Keyword search</label>
+                <label for="character-search">Keyword search</label>
                 <div class="search-input-wrapper">
                   <input
                     class="search-input"
-                    id="location-search"
-                    name="location-search"
-                    placeholder="Search by realm, biome, or landmark"
+                    id="character-search"
+                    name="character-search"
+                    placeholder="Search by name, title, or calling"
                     type="search"
                   />
                   <button class="search-clear" type="button" aria-label="Clear search">×</button>
@@ -66,30 +66,30 @@
               <div class="search-filters">
                 <div class="grid">
                   <div class="search-field">
-                    <label for="location-region">Region</label>
-                    <select class="search-select" id="location-region" name="location-region" data-filter-key="region">
-                      <option>All regions</option>
-                      <option>Skybound Terraces</option>
-                      <option>Mirror Sea</option>
-                      <option>Obsidian Belt</option>
+                    <label for="character-role">Role</label>
+                    <select class="search-select" id="character-role" name="character-role" data-filter-key="role">
+                      <option>All roles</option>
+                      <option>Archivist</option>
+                      <option>Envoy</option>
+                      <option>Explorer</option>
                     </select>
                   </div>
                   <div class="search-field">
-                    <label for="location-era">Era</label>
-                    <select class="search-select" id="location-era" name="location-era" data-filter-key="era">
+                    <label for="character-era">Era</label>
+                    <select class="search-select" id="character-era" name="character-era" data-filter-key="era">
                       <option>All eras</option>
-                      <option>Founding Dawn</option>
+                      <option>Convergence Era</option>
                       <option>Crystal Age</option>
                       <option>Radiant Age</option>
                     </select>
                   </div>
                   <div class="search-field">
-                    <label for="location-status">Status</label>
-                    <select class="search-select" id="location-status" name="location-status" data-filter-key="status">
-                      <option>All statuses</option>
-                      <option>Active</option>
-                      <option>Shrouded</option>
-                      <option>Ruins</option>
+                    <label for="character-lineage">Lineage</label>
+                    <select class="search-select" id="character-lineage" name="character-lineage" data-filter-key="lineage">
+                      <option>All lineages</option>
+                      <option>Veyari</option>
+                      <option>Meralis</option>
+                      <option>Solarii</option>
                     </select>
                   </div>
                 </div>
@@ -101,53 +101,53 @@
             </form>
           </section>
 
-          <section class="grid reveal" id="location-list">
-            <article class="card" data-filter-item data-region="Skybound Terraces" data-era="Founding Dawn" data-status="Active">
+          <section class="grid reveal" id="character-list">
+            <article class="card" data-filter-item data-role="Archivist" data-era="Convergence Era" data-lineage="Veyari">
               <div class="card-header">
-                <span class="card-tag">Sky sanctuary</span>
-                <div class="card-title">The Aetheric Grove</div>
-                <p>Floating forests where the sky-bloom trees sing with ambient light.</p>
+                <span class="card-tag">Archivist</span>
+                <div class="card-title">Liora Kesh</div>
+                <p>Keeper of the Resonant Codex and guide to the memory vaults.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Region:</span> Skybound Terraces</p>
-                  <p><span>Era:</span> Founding Dawn</p>
-                  <p><span>Status:</span> Active sanctuary</p>
+                  <p><span>Lineage:</span> Veyari</p>
+                  <p><span>Era:</span> Convergence Era</p>
+                  <p><span>Signature focus:</span> Codex preservation</p>
                 </div>
-                <a class="button secondary" href="location-aetheric-grove.html">Open dossier</a>
+                <a class="button secondary" href="characters/character-liora-kesh.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-region="Mirror Sea" data-era="Crystal Age" data-status="Shrouded">
+            <article class="card" data-filter-item data-role="Envoy" data-era="Crystal Age" data-lineage="Meralis">
               <div class="card-header">
-                <span class="card-tag">Oceanic</span>
-                <div class="card-title">Mirror Sea Reefs</div>
-                <p>Prismatic reefs that reflect the past in their luminous coral.</p>
+                <span class="card-tag">Envoy</span>
+                <div class="card-title">Tarek of the Nine Lights</div>
+                <p>Diplomat who forged the Skybridge Accords in the Crystal Age.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Region:</span> Mirror Sea</p>
+                  <p><span>Lineage:</span> Meralis</p>
                   <p><span>Era:</span> Crystal Age</p>
-                  <p><span>Status:</span> Shrouded</p>
+                  <p><span>Signature focus:</span> Treaty forging</p>
                 </div>
-                <a class="button secondary" href="location-mirror-sea-reefs.html">Open dossier</a>
+                <a class="button secondary" href="characters/character-tarek-nine-lights.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-region="Obsidian Belt" data-era="Radiant Age" data-status="Active">
+            <article class="card" data-filter-item data-role="Explorer" data-era="Radiant Age" data-lineage="Solarii">
               <div class="card-header">
-                <span class="card-tag">Citadel</span>
-                <div class="card-title">Citadel of Nine Currents</div>
-                <p>A rotating city-state powered by tidal energy and ancient glyphs.</p>
+                <span class="card-tag">Explorer</span>
+                <div class="card-title">Asha Miraen</div>
+                <p>Star cartographer mapping the hidden paths between Li'Ona realms.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Region:</span> Obsidian Belt</p>
+                  <p><span>Lineage:</span> Solarii</p>
                   <p><span>Era:</span> Radiant Age</p>
-                  <p><span>Status:</span> Active</p>
+                  <p><span>Signature focus:</span> Rift cartography</p>
                 </div>
-                <a class="button secondary" href="location-citadel-nine-currents.html">Open dossier</a>
+                <a class="button secondary" href="characters/character-asha-miraen.html">Open dossier</a>
               </div>
             </article>
-            <p class="empty-state" role="status" hidden>No locations match your filters yet.</p>
+            <p class="empty-state" role="status" hidden>No characters match your filters yet.</p>
           </section>
         </main>
 
@@ -155,8 +155,8 @@
           <div class="footer-links">
             <a href="archive-index.html">Index</a>
             <a href="species.html">Species</a>
-            <a href="characters.html">Characters</a>
             <a href="history.html">History</a>
+            <a href="locations.html">Locations</a>
           </div>
           <div class="socials">
             <a href="#" aria-label="Visit the Li'Ona Archives on Lumina">
@@ -190,14 +190,14 @@
     </div>
 
     <nav class="bottom-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="archive-index.html">Archive Index</a>
       <a href="species.html">Species</a>
-      <a href="characters.html">Characters</a>
+      <a href="characters.html" aria-current="page">Characters</a>
       <a href="history.html">History</a>
-      <a href="locations.html" aria-current="page">Locations</a>
+      <a href="locations.html">Locations</a>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="../assets/script.js"></script>
   </body>
 </html>
