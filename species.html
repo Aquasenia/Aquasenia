@@ -44,7 +44,7 @@
             </p>
           </header>
 
-          <section class="search-panel reveal">
+          <section class="search-panel reveal" data-filter-target="species-list">
             <h2>Search species</h2>
             <form>
               <div class="search-field">
@@ -67,7 +67,7 @@
                 <div class="grid">
                   <div class="search-field">
                     <label for="species-origin">Origin realm</label>
-                    <select class="search-select" id="species-origin" name="species-origin">
+                    <select class="search-select" id="species-origin" name="species-origin" data-filter-key="origin">
                       <option>All origins</option>
                       <option>Skybound Terraces</option>
                       <option>Mirror Sea</option>
@@ -76,7 +76,7 @@
                   </div>
                   <div class="search-field">
                     <label for="species-era">Era discovered</label>
-                    <select class="search-select" id="species-era" name="species-era">
+                    <select class="search-select" id="species-era" name="species-era" data-filter-key="era">
                       <option>All eras</option>
                       <option>Founding Dawn</option>
                       <option>Crystal Age</option>
@@ -85,20 +85,24 @@
                   </div>
                   <div class="search-field">
                     <label for="species-role">Primary role</label>
-                    <select class="search-select" id="species-role" name="species-role">
+                    <select class="search-select" id="species-role" name="species-role" data-filter-key="role">
                       <option>All roles</option>
                       <option>Navigators</option>
-                      <option>Artisans</option>
+                      <option>Diplomats</option>
                       <option>Guardians</option>
                     </select>
                   </div>
                 </div>
               </div>
+              <div class="search-feedback">
+                <p class="results-count" aria-live="polite"></p>
+                <button class="filter-reset" type="button">Reset filters</button>
+              </div>
             </form>
           </section>
 
-          <section class="grid reveal">
-            <article class="card">
+          <section class="grid reveal" id="species-list">
+            <article class="card" data-filter-item data-origin="Skybound Terraces" data-era="Founding Dawn" data-role="Navigators">
               <div class="card-header">
                 <span class="card-tag">Echo-born</span>
                 <div class="card-title">Veyari Echo-Born</div>
@@ -113,7 +117,7 @@
                 <a class="button secondary" href="species-veyari-echo-born.html">Open dossier</a>
               </div>
             </article>
-            <article class="card">
+            <article class="card" data-filter-item data-origin="Mirror Sea" data-era="Crystal Age" data-role="Diplomats">
               <div class="card-header">
                 <span class="card-tag">Tidebound</span>
                 <div class="card-title">Meralis Tidemancers</div>
@@ -128,7 +132,7 @@
                 <a class="button secondary" href="species-meralis-tidemancers.html">Open dossier</a>
               </div>
             </article>
-            <article class="card">
+            <article class="card" data-filter-item data-origin="Obsidian Belt" data-era="Resonance Era" data-role="Guardians">
               <div class="card-header">
                 <span class="card-tag">Crystalline</span>
                 <div class="card-title">Solarii Prismkin</div>
@@ -143,18 +147,7 @@
                 <a class="button secondary" href="species-solarii-prismkin.html">Open dossier</a>
               </div>
             </article>
-          </section>
-
-          <section class="faq reveal">
-            <h2 class="page-title">FAQ</h2>
-            <details>
-              <summary>What defines a Li'Ona species?</summary>
-              <p>Species entries combine biology, cultural memory, and known alliances in the archive.</p>
-            </details>
-            <details>
-              <summary>Are there lost species?</summary>
-              <p>Yes. Missing lineages are marked as "Obscured" until new lore is recovered.</p>
-            </details>
+            <p class="empty-state" role="status" hidden>No species match your filters yet.</p>
           </section>
         </main>
 

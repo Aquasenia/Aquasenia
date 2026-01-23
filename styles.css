@@ -115,13 +115,14 @@ summary:focus-visible {
   border-radius: 12px;
   color: #e6f2f2;
   font-weight: 500;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 
 .nav a[aria-current="page"],
 .nav a:hover {
   background: rgba(31, 182, 184, 0.15);
   color: #ffffff;
+  transform: translateX(4px);
 }
 
 .sidebar-card {
@@ -130,6 +131,12 @@ summary:focus-visible {
   padding: 1.2rem;
   color: #dbe9e6;
   font-size: 0.95rem;
+  transition: transform var(--transition), background var(--transition);
+}
+
+.sidebar-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .content {
@@ -201,6 +208,12 @@ summary:focus-visible {
   transform: translateY(-3px);
   box-shadow: 0 16px 34px rgba(21, 145, 147, 0.2);
   background: var(--teal-cyan-dark);
+}
+
+.button.secondary:hover {
+  background: rgba(31, 182, 184, 0.1);
+  color: var(--teal-cyan-dark);
+  border-color: rgba(21, 145, 147, 0.35);
 }
 
 .grid {
@@ -431,6 +444,12 @@ summary:focus-visible {
   backdrop-filter: blur(12px);
   display: grid;
   gap: 1rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.search-panel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px rgba(15, 31, 28, 0.12);
 }
 
 .search-panel form {
@@ -459,6 +478,13 @@ summary:focus-visible {
   border-radius: 12px;
   border: 1px solid rgba(15, 31, 28, 0.15);
   font-size: 1rem;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.search-input:hover,
+.search-select:hover {
+  border-color: rgba(31, 182, 184, 0.5);
+  transform: translateY(-1px);
 }
 
 .search-input-wrapper .search-input {
@@ -501,6 +527,13 @@ summary:focus-visible {
   font-weight: 600;
   color: var(--teal-cyan-dark);
   cursor: pointer;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.filter-toggle:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 182, 184, 0.4);
+  box-shadow: 0 10px 18px rgba(31, 182, 184, 0.12);
 }
 
 .filter-toggle-icon {
@@ -530,12 +563,31 @@ summary:focus-visible {
 .index-list {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .index-card {
   gap: 1.4rem;
   padding: 1.6rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(31, 182, 184, 0.18);
+  background: linear-gradient(160deg, rgba(31, 182, 184, 0.08), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, #f4f9f8 100%);
+}
+
+.index-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(139, 108, 246, 0.15), transparent 55%);
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+}
+
+.index-card:hover::before {
+  opacity: 1;
 }
 
 .index-card-header {
@@ -554,6 +606,19 @@ summary:focus-visible {
   place-items: center;
   color: var(--teal-cyan-dark);
   font-weight: 700;
+  transition: transform var(--transition), background var(--transition);
+}
+
+.index-card:hover .icon-badge {
+  transform: scale(1.06);
+  background: rgba(31, 182, 184, 0.25);
+}
+
+.index-card .card-meta p {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(31, 182, 184, 0.15);
 }
 
 .timeline {
@@ -566,6 +631,12 @@ summary:focus-visible {
   border-radius: 18px;
   padding: 1rem 1.2rem;
   box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.timeline details:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
 }
 
 .timeline summary {
@@ -654,6 +725,53 @@ summary:focus-visible {
   background: rgba(31, 182, 184, 0.1);
   display: grid;
   place-items: center;
+  transition: transform var(--transition), background var(--transition), color var(--transition);
+}
+
+.socials a:hover {
+  transform: translateY(-3px);
+  background: rgba(31, 182, 184, 0.25);
+  color: var(--teal-cyan-dark);
+}
+
+.search-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.results-count {
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.filter-reset {
+  border: none;
+  background: rgba(31, 182, 184, 0.12);
+  color: var(--teal-cyan-dark);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--transition), background var(--transition), color var(--transition);
+}
+
+.filter-reset:hover {
+  transform: translateY(-2px);
+  background: rgba(31, 182, 184, 0.2);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px dashed rgba(31, 182, 184, 0.4);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 .reveal {
@@ -710,7 +828,17 @@ summary:focus-visible {
   }
 
   .button,
-  .card {
+  .card,
+  .nav a,
+  .sidebar-card,
+  .search-panel,
+  .search-input,
+  .search-select,
+  .filter-toggle,
+  .timeline details,
+  .socials a,
+  .filter-reset,
+  .icon-badge {
     transition: none;
   }
 }
