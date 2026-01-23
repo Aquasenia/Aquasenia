@@ -346,6 +346,20 @@ summary:focus-visible {
   letter-spacing: 0.12em;
   color: var(--teal-cyan-dark);
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-type-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  background: rgba(31, 182, 184, 0.12);
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  color: var(--teal-cyan-dark);
 }
 
 .entry-grid {
