@@ -12,28 +12,6 @@ if (navToggle && sidebar) {
   });
 }
 
-const carouselTrack = document.querySelector(".carousel-track");
-const prevButton = document.querySelector("[data-carousel='prev']");
-const nextButton = document.querySelector("[data-carousel='next']");
-
-if (carouselTrack && prevButton && nextButton) {
-  const scrollAmount = () => carouselTrack.clientWidth * 0.9;
-
-  prevButton.addEventListener("click", () => {
-    carouselTrack.scrollBy({
-      left: -scrollAmount(),
-      behavior: "smooth",
-    });
-  });
-
-  nextButton.addEventListener("click", () => {
-    carouselTrack.scrollBy({
-      left: scrollAmount(),
-      behavior: "smooth",
-    });
-  });
-}
-
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(

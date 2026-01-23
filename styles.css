@@ -276,39 +276,14 @@ summary:focus-visible {
   letter-spacing: 0.02em;
 }
 
-.carousel {
-  display: grid;
-  gap: 1.2rem;
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.carousel-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.carousel-track {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(240px, 1fr);
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 0.5rem;
-}
-
-.carousel-track::-webkit-scrollbar {
-  height: 8px;
-}
-
-.carousel-track::-webkit-scrollbar-thumb {
-  background: rgba(15, 31, 28, 0.2);
-  border-radius: 999px;
-}
-
-.carousel-card {
-  scroll-snap-align: start;
+.card-link:focus-visible {
+  outline: 3px solid rgba(63, 183, 179, 0.45);
+  outline-offset: 4px;
 }
 
 .search-panel {
@@ -500,10 +475,6 @@ summary:focus-visible {
 @media (max-width: 600px) {
   .index-card {
     grid-template-columns: 1fr;
-  }
-
-  .carousel-track {
-    grid-auto-columns: 80%;
   }
 }
 
