@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,12 +37,44 @@
           <a href="../history.html">History</a>
           <a href="../locations.html" aria-current="page">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Map the sanctuaries, city-states, and wild frontiers of Li'Ona.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">
@@ -50,102 +82,71 @@
               Location dossier
             </p>
             <h1 class="page-title">The Aetheric Grove</h1>
-            <p class="page-subtitle">
-              Floating forests where sky-bloom trees sing with ambient light, forming a sanctuary above
-              the Mirror Sea.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Region</strong>
-              <span>Skybound Terraces</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  The Aetheric Grove is a floating forest sanctuary above the Mirror Sea, tethered by
+                  luminous roots and sky-bloom trees. It serves as a waypoint for travelers, a neutral
+                  meeting ground for conclaves, and a living canopy of healing nectar. The Grove hums with
+                  harmonic light trails that guide arrivals through the clouds.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Location; sky sanctuary and diplomatic waypoint.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Region: Skybound Terraces.</li>
+                  <li>Landmark type: Sky sanctuary.</li>
+                  <li>Status: Active sanctuary protected by rotating guardianship.</li>
+                  <li>Hosts the annual Resonance Bloom gathering.</li>
+                  <li>Known for luminous navigation trails in the canopy.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  Sky-bloom trees form layered platforms of bioluminescent leaves, creating corridors of
+                  light that shift with seasonal winds. Ringed terraces specialize in diplomacy, restoration,
+                  and study, while echo archives preserve migration songs for visiting crews.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  Established during the Founding Dawn, the Grove became a neutral refuge for early Skybridge
+                  travelers. Over time it grew into a sanctuary network, with observatories monitoring aurora
+                  shifts and storm wards protecting the region during major gatherings.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+                  <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+                  <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Era</strong>
-              <span>Founding Dawn</span>
-            </div>
-            <div class="metric-card">
-              <strong>Status</strong>
-              <span>Active sanctuary</span>
-            </div>
-            <div class="metric-card">
-              <strong>Landmark type</strong>
-              <span>Sky sanctuary</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Overview</div>
-              <p>
-                The Aetheric Grove is an airborne refuge tethered by luminous roots. Its groves host
-                interstellar conclaves and serve as a waypoint for skybound travelers.
-              </p>
-              <div class="card-meta">
-                <p><span>Region:</span> Skybound Terraces</p>
-                <p><span>Era:</span> Founding Dawn</p>
-                <p><span>Status:</span> Active sanctuary</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Highlights</div>
-              <ul class="entry-list">
-                <li>Sky-bloom trees emit harmonic light trails for navigation.</li>
-                <li>Hosts the annual Resonance Bloom gathering.</li>
-                <li>Protected by Veyari Echo-Born pathfinders.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-tree" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Living canopy</h2>
-              </div>
-              <p>
-                Sky-bloom trees form layered platforms of bioluminescent leaves, creating corridors of light
-                that shift with the seasonal winds above the Mirror Sea.
-              </p>
-              <ul class="lore-list">
-                <li>Root anchors pulse to keep the grove afloat.</li>
-                <li>Canopy orchards supply healing nectar for travelers.</li>
-                <li>Songbirds use resonance knots to guide arrivals.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Sanctuary districts</h2>
-              </div>
-              <p>
-                The Grove is divided into ringed terraces, each specializing in diplomacy, restoration, or
-                study, allowing visitors to navigate by color-coded glows.
-              </p>
-              <ul class="lore-list">
-                <li>Echo archives store Skybound migration songs.</li>
-                <li>Quiet glades host recovery tents for storm-worn crews.</li>
-                <li>Observatories monitor aurora shifts above the sea.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Guardianship</h2>
-              </div>
-              <p>
-                Veyari pathfinders and Solarii guardians maintain a rotating watch to protect the grove from
-                resonance storms and drifting debris fields.
-              </p>
-              <ul class="lore-list">
-                <li>Skybridge sentinels patrol the perimeter with prism beacons.</li>
-                <li>Emergency moorings secure visiting vessels.</li>
-                <li>Storm wards activate during the Resonance Bloom.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>The Aetheric Grove</dd>
+                <dt>Category</dt>
+                <dd>Location</dd>
+                <dt>Status</dt>
+                <dd>Active</dd>
+                <dt>First appearance</dt>
+                <dd>Founding Dawn</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

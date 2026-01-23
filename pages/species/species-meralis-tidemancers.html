@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,12 +37,44 @@
           <a href="../history.html">History</a>
           <a href="../locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Species dossiers covering biology, culture, and interstellar alliances.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">
@@ -50,121 +82,71 @@
               Species dossier
             </p>
             <h1 class="page-title">Meralis Tidemancers</h1>
-            <p class="page-subtitle">
-              Oceanic diplomats who braid water and light into memory threads, guiding treaty rites.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Lifespan</strong>
-              <span>180–220 tidal cycles</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  The Meralis Tidemancers are oceanic diplomats from the Mirror Sea who braid water and
+                  light into memory threads. They calm disputes by weaving shared histories, then archive
+                  those agreements in coral spires. Their shoal councils rotate stewardship roles so every
+                  community remembers the treaties that hold the seas together.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Species of amphibious treaty stewards and memory-braiders.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Lifespan ranges from 180–220 tidal cycles.</li>
+                  <li>Average height is 1.7 meters with bioluminescent organs.</li>
+                  <li>Memory threads are stored in coral spires beneath the Mirror Sea.</li>
+                  <li>Diplomatic relationship with humans is neutral.</li>
+                  <li>Primary role centers on treaty stewardship and mediation.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  Meralis physiology blends aquatic grace with gilled lungs and luminous fin crests. Their
+                  skin tides shimmer with pigments that record emotional resonance, allowing them to braid
+                  water-light memories that guide diplomatic rites.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  The Tidemancers rose during the Crystal Age as treaty stewards, translating the Mirror
+                  Sea's memory currents into living histories. Early shoals brokered peace between coral
+                  citadels and surface fleets, and their memory braids remain the archive of record.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+                  <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+                  <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Average height</strong>
-              <span>1.7 meters</span>
-            </div>
-            <div class="metric-card">
-              <strong>Average weight</strong>
-              <span>74 kilograms</span>
-            </div>
-            <div class="metric-card">
-              <strong>Relationship with humans</strong>
-              <span>Neutral</span>
-            </div>
-            <div class="metric-card">
-              <strong>Species status</strong>
-              <span>Thriving</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Overview</div>
-              <p>
-                Meralis Tidemancers are tidebound emissaries who translate the Mirror Sea currents into
-                living histories. Their ceremonial weaves are kept in the Archive Index for diplomatic reference.
-              </p>
-              <div class="card-meta">
-                <p><span>Origin realm:</span> Mirror Sea</p>
-                <p><span>Era discovered:</span> Crystal Age</p>
-                <p><span>Primary role:</span> Diplomats</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Key traits</div>
-              <ul class="entry-list">
-                <li>Water-light braiding rituals used to seal pacts.</li>
-                <li>Memory threads stored in coral spires beneath the Mirror Sea.</li>
-                <li>Renowned for calming interstellar disputes with harmonic tides.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-dna" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Biology &amp; Anatomy</h2>
-              </div>
-              <p>
-                Meralis physiology blends aquatic grace with bio-luminescent organs that pulse in
-                synchrony with oceanic currents, aiding their memory-braiding rituals.
-              </p>
-              <ul class="lore-list">
-                <li>Skin tides shimmer with living pigment that records emotional resonance.</li>
-                <li>Gilled lungs allow long submersion while chanting treaty rites.</li>
-                <li>Vestigial fin crests help channel biolight through their braids.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-droplet" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Deities &amp; Religions</h2>
-              </div>
-              <p>
-                The Tide Chorus venerates river-spirits and lunar patrons believed to guide the Mirror Sea.
-                Offerings are released in light-braided shells during high tide.
-              </p>
-              <ul class="lore-list">
-                <li>Moonrise litanies bless treaty threads before each summit.</li>
-                <li>Priest-navigators read storm glyphs etched in tidal foam.</li>
-                <li>Harmony pools host quiet vigils for lost currents.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Background</h2>
-              </div>
-              <p>
-                The Tidemancers rose during the Crystal Age as treaty stewards, translating the Mirror Sea's
-                memory currents into living histories that anchor interstellar accords.
-              </p>
-              <ul class="lore-list">
-                <li>First shoals brokered peace between coral citadels and surface fleets.</li>
-                <li>Memory braids are archived in the Index for diplomatic reference.</li>
-                <li>Historic pacts are retold during the Sea of Lanterns festival.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Society &amp; Roles</h2>
-              </div>
-              <p>
-                Meralis society is organized around flowing kinships called shoals, each entrusted with a
-                rotating role in treaty stewardship, memory keeping, and ritual hospitality.
-              </p>
-              <ul class="lore-list">
-                <li>Shoal councils gather at moonrise to harmonize seasonal vows.</li>
-                <li>Guests are welcomed through ceremonial tide circles and shared luminescent feasts.</li>
-                <li>Storykeepers braid biographies into water-light patterns for oral recall.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Meralis Tidemancers</dd>
+                <dt>Category</dt>
+                <dd>Species</dd>
+                <dt>Status</dt>
+                <dd>Active</dd>
+                <dt>First appearance</dt>
+                <dd>Crystal Age</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

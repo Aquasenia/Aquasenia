@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,111 +37,113 @@
           <a href="../history.html">History</a>
           <a href="../locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Character dossiers spotlight the legends shaping Li'Ona's future.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">Character dossier</p>
             <h1 class="page-title">Asha Miraen</h1>
-            <p class="page-subtitle">
-              Star cartographer mapping the hidden paths between Li'Ona realms and rift corridors.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Role</strong>
-              <span>Explorer</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  Asha Miraen is a Solarii cartographer who maps the hidden paths between Li'Ona realms
+                  and rift corridors. Her Stellar Weave atlas guides expedition crews through shifting
+                  routes, and her calm fieldwork keeps rescue lanes open. She bridges archivists, Prismkin
+                  guardians, and Meralis diplomats when routes destabilize.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Character; Solarii explorer and rift cartographer.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Role: Explorer.</li>
+                  <li>Era: Radiant Age.</li>
+                  <li>Lineage: Solarii.</li>
+                  <li>Signature focus: Rift cartography and resonance tuning.</li>
+                  <li>Developed the Stellar Weave atlas used by expedition crews.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  Trained in crystal observatories, Asha blends field observation with resonance tuning to
+                  mark safe corridors that shift each season. She uses prism beacons to triangulate
+                  unstable rifts and updates archival glyphs for navigation teams.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  Descended from Solarii navigators who served the first Lumina Pact convoys, Asha built
+                  her reputation by decoding resonance storms along the Obsidian Belt. Her atlas is now
+                  the standard reference for emergent rift harmonics.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+                  <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+                  <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Era</strong>
-              <span>Radiant Age</span>
-            </div>
-            <div class="metric-card">
-              <strong>Lineage</strong>
-              <span>Solarii</span>
-            </div>
-            <div class="metric-card">
-              <strong>Signature focus</strong>
-              <span>Rift cartography</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Profile</div>
-              <p>
-                Asha Miraen charts astral routes through shifting rifts, guiding explorers across uncharted
-                corridors. Her maps are prized by the archive council.
-              </p>
-              <div class="card-meta">
-                <p><span>Lineage:</span> Solarii</p>
-                <p><span>Era:</span> Radiant Age</p>
-                <p><span>Signature focus:</span> Rift cartography</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Key notes</div>
-              <ul class="entry-list">
-                <li>Developed the Stellar Weave atlas used by expedition crews.</li>
-                <li>Known for decoding resonance storms along the Obsidian Belt.</li>
-                <li>Supports archival teams with navigational glyph updates.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Cartographer's lineage</h2>
-              </div>
-              <p>
-                Asha descends from a long line of Solarii navigators who served the first Lumina Pact
-                convoys, inheriting a tradition of reading light patterns as travel omens.
-              </p>
-              <ul class="lore-list">
-                <li>Trained in crystal observatories at the Skybound Terraces.</li>
-                <li>Mentored by the Archive Index’s senior route archivists.</li>
-                <li>Maintains a personal atlas of emergent rift harmonics.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Signature methods</h2>
-              </div>
-              <p>
-                Her mapping process blends field observation with resonance tuning, allowing her to mark
-                safe corridors that shift every season.
-              </p>
-              <ul class="lore-list">
-                <li>Uses prism beacons to triangulate unstable rifts.</li>
-                <li>Documents storm echoes in the Stellar Weave atlas.</li>
-                <li>Guides crews through silent lanes during meteor surges.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Current alliances</h2>
-              </div>
-              <p>
-                Asha serves as an intermediary between Prismkin guardians and Meralis diplomats, ensuring
-                the resonance routes remain open for humanitarian journeys.
-              </p>
-              <ul class="lore-list">
-                <li>Coordinates joint expeditions with the Skybridge Accords.</li>
-                <li>Briefs new navigators with archive-approved route updates.</li>
-                <li>Leads rescue operations when rifts destabilize.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Asha Miraen</dd>
+                <dt>Category</dt>
+                <dd>Character</dd>
+                <dt>Status</dt>
+                <dd>Active</dd>
+                <dt>First appearance</dt>
+                <dd>Radiant Age</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

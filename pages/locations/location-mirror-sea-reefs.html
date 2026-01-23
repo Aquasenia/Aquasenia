@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,12 +37,44 @@
           <a href="../history.html">History</a>
           <a href="../locations.html" aria-current="page">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Map the sanctuaries, city-states, and wild frontiers of Li'Ona.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">
@@ -50,102 +82,71 @@
               Location dossier
             </p>
             <h1 class="page-title">Mirror Sea Reefs</h1>
-            <p class="page-subtitle">
-              Prismatic reefs that reflect the past in luminous coral, guarding the memories of the
-              Crystal Age.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Region</strong>
-              <span>Mirror Sea</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  The Mirror Sea Reefs are prismatic coral fields that reflect memories from the Crystal
+                  Age. Their luminous spires hold treaty echoes and historic images that surface during
+                  low-tide resonance windows. The reefs remain mostly shrouded, with guided access for
+                  scholars and diplomats.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Location; oceanic reef sanctuary and memory archive.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Region: Mirror Sea.</li>
+                  <li>Landmark type: Oceanic reef.</li>
+                  <li>Status: Shrouded with limited, guided access.</li>
+                  <li>Memory glints appear at dusk during calm tides.</li>
+                  <li>Meralis guardians oversee entry windows.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  The reefs grow in mirrored strata, storing images of past moments when tides align with
+                  the Crystal Age resonance field. Resonant algae emit guidance lights, and coral gardens
+                  reshape after each aurora season.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  During the Crystal Age, the reefs became ceremonial archives for treaty gatherings. After
+                  later resonance storms, the spires were closed to general travel, and Meralis guides now
+                  escort limited archival expeditions through low-tide corridors.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+                  <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+                  <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Era</strong>
-              <span>Crystal Age</span>
-            </div>
-            <div class="metric-card">
-              <strong>Status</strong>
-              <span>Shrouded</span>
-            </div>
-            <div class="metric-card">
-              <strong>Landmark type</strong>
-              <span>Oceanic</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Overview</div>
-              <p>
-                The Mirror Sea Reefs are a shrouded expanse of living crystal coral. Travelers report
-                seeing echoes of ancient events within their reflective spires.
-              </p>
-              <div class="card-meta">
-                <p><span>Region:</span> Mirror Sea</p>
-                <p><span>Era:</span> Crystal Age</p>
-                <p><span>Status:</span> Shrouded</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Highlights</div>
-              <ul class="entry-list">
-                <li>Coral spires capture memory threads of treaty ceremonies.</li>
-                <li>Accessible only during low-tide resonance windows.</li>
-                <li>Watched by Meralis Tidemancers and reef guardians.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-water" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Reflective ecology</h2>
-              </div>
-              <p>
-                The reef’s coral grows in mirrored strata, storing images of past moments that can be viewed
-                when the tide aligns with the Crystal Age resonance field.
-              </p>
-              <ul class="lore-list">
-                <li>Memory glints appear at dusk as the sea calms.</li>
-                <li>Coral gardens reshape after each aurora season.</li>
-                <li>Resonant algae emit soft guidance lights.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-key" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Ritual access</h2>
-              </div>
-              <p>
-                Meralis guardians open safe paths only during low-tide resonance windows, escorting scholars
-                to the coral spires that hold treaty memories.
-              </p>
-              <ul class="lore-list">
-                <li>Visitors wear tide veils to avoid reflection shock.</li>
-                <li>Echo vaults require a three-note chime to enter.</li>
-                <li>Guides mark safe routes with floating crystal lanterns.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-wind" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Current conditions</h2>
-              </div>
-              <p>
-                The reefs remain shrouded due to lingering resonance storms, but recent calm cycles suggest
-                the spires may soon reopen for archival expeditions.
-              </p>
-              <ul class="lore-list">
-                <li>Stormwatchers monitor the reefs from nearby tide towers.</li>
-                <li>Supply convoys wait in protected lagoons.</li>
-                <li>Archive Index analysts review recovered memory fragments.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Mirror Sea Reefs</dd>
+                <dt>Category</dt>
+                <dd>Location</dd>
+                <dt>Status</dt>
+                <dd>Unknown</dd>
+                <dt>First appearance</dt>
+                <dd>Crystal Age</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

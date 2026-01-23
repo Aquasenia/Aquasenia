@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
-  <body>
+  <body data-base="">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -30,12 +30,44 @@
           <a href="pages/history.html">History</a>
           <a href="pages/locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="pages/locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="pages/characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="pages/characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="pages/locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="pages/species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="pages/locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="pages/history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="pages/species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="pages/characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="pages/species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           A living archive of the Li'Ona universe, curated for builders, storytellers, and explorers.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <section class="hero reveal">
             <h1>Step inside the Li'Ona universe.</h1>
