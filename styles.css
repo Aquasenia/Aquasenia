@@ -234,6 +234,48 @@ summary:focus-visible {
   color: var(--muted);
 }
 
+.card-detail summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.card-detail[open] {
+  box-shadow: var(--shadow);
+}
+
+.card-details {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(15, 31, 28, 0.08);
+  display: grid;
+  gap: 0.75rem;
+  color: var(--muted);
+}
+
+.card-meta {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.card-meta span {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.card-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teal-cyan-dark);
+  letter-spacing: 0.02em;
+}
+
 .carousel {
   display: grid;
   gap: 1.2rem;
@@ -307,6 +349,13 @@ summary:focus-visible {
 }
 
 .index-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.index-card summary {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1rem;
