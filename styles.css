@@ -335,6 +335,67 @@ summary:focus-visible {
   gap: 0.75rem;
 }
 
+.lore-sheet {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.6rem;
+  border: 1px solid rgba(15, 31, 28, 0.08);
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.lore-section {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.lore-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.lore-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: rgba(31, 182, 184, 0.12);
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  color: var(--teal-cyan-dark);
+}
+
+.lore-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+}
+
+.lore-divider {
+  height: 1px;
+  background: rgba(15, 31, 28, 0.12);
+}
+
+.lore-list {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--muted);
+}
+
+.lore-list li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+.lore-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--teal-cyan-dark);
+}
+
 .search-panel {
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -453,6 +514,19 @@ summary:focus-visible {
 .faq summary {
   cursor: pointer;
   font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::marker {
+  content: "";
 }
 
 .footer {
