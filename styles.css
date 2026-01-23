@@ -125,6 +125,37 @@ summary:focus-visible {
   transform: translateX(4px);
 }
 
+.bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  padding: 0.7rem max(1rem, env(safe-area-inset-left)) calc(0.7rem + env(safe-area-inset-bottom))
+    max(1rem, env(safe-area-inset-right));
+  background: rgba(16, 27, 26, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -12px 24px rgba(15, 31, 28, 0.2);
+}
+
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.4rem;
+  border-radius: 999px;
+  color: #d7e7e5;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.bottom-nav a[aria-current="page"] {
+  background: rgba(31, 182, 184, 0.25);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .sidebar-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 18px;
@@ -807,7 +838,12 @@ summary:focus-visible {
   }
 
   .content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 6.5rem;
+  }
+
+  .bottom-nav {
+    display: flex;
+    gap: 0.35rem;
   }
 }
 
