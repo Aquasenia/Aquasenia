@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Li'Ona Archives | Characters</title>
+    <title>The Li'Ona Archives | Species</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../assets/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,38 +23,38 @@
           </button>
         </div>
         <nav id="site-nav" class="nav">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
           <a href="archive-index.html">Archive Index</a>
-          <a href="species.html">Species</a>
-          <a href="characters.html" aria-current="page">Characters</a>
+          <a href="species.html" aria-current="page">Species</a>
+          <a href="characters.html">Characters</a>
           <a href="history.html">History</a>
           <a href="locations.html">Locations</a>
         </nav>
         <div class="sidebar-card">
-          Character dossiers spotlight the legends shaping Li'Ona's future.
+          Species dossiers covering biology, culture, and interstellar alliances.
         </div>
       </aside>
 
       <div class="content">
         <main id="main">
           <header class="reveal">
-            <h1 class="page-title">Character Directory</h1>
+            <h1 class="page-title">Species Directory</h1>
             <p class="page-subtitle">
-              Meet diplomats, mystics, and strategists who steer the fate of Li'Ona.
+              Trace the lineages of Li'Ona, from crystalline oceanfolk to star-tempered nomads.
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="character-list">
-            <h2>Search characters</h2>
+          <section class="search-panel reveal" data-filter-target="species-list">
+            <h2>Search species</h2>
             <form>
               <div class="search-field">
-                <label for="character-search">Keyword search</label>
+                <label for="species-search">Keyword search</label>
                 <div class="search-input-wrapper">
                   <input
                     class="search-input"
-                    id="character-search"
-                    name="character-search"
-                    placeholder="Search by name, title, or calling"
+                    id="species-search"
+                    name="species-search"
+                    placeholder="Search by lineage, biome, or trait"
                     type="search"
                   />
                   <button class="search-clear" type="button" aria-label="Clear search">×</button>
@@ -66,30 +66,30 @@
               <div class="search-filters">
                 <div class="grid">
                   <div class="search-field">
-                    <label for="character-role">Role</label>
-                    <select class="search-select" id="character-role" name="character-role" data-filter-key="role">
-                      <option>All roles</option>
-                      <option>Archivist</option>
-                      <option>Envoy</option>
-                      <option>Explorer</option>
+                    <label for="species-origin">Origin realm</label>
+                    <select class="search-select" id="species-origin" name="species-origin" data-filter-key="origin">
+                      <option>All origins</option>
+                      <option>Skybound Terraces</option>
+                      <option>Mirror Sea</option>
+                      <option>Obsidian Belt</option>
                     </select>
                   </div>
                   <div class="search-field">
-                    <label for="character-era">Era</label>
-                    <select class="search-select" id="character-era" name="character-era" data-filter-key="era">
+                    <label for="species-era">Era discovered</label>
+                    <select class="search-select" id="species-era" name="species-era" data-filter-key="era">
                       <option>All eras</option>
-                      <option>Convergence Era</option>
+                      <option>Founding Dawn</option>
                       <option>Crystal Age</option>
-                      <option>Radiant Age</option>
+                      <option>Resonance Era</option>
                     </select>
                   </div>
                   <div class="search-field">
-                    <label for="character-lineage">Lineage</label>
-                    <select class="search-select" id="character-lineage" name="character-lineage" data-filter-key="lineage">
-                      <option>All lineages</option>
-                      <option>Veyari</option>
-                      <option>Meralis</option>
-                      <option>Solarii</option>
+                    <label for="species-role">Primary role</label>
+                    <select class="search-select" id="species-role" name="species-role" data-filter-key="role">
+                      <option>All roles</option>
+                      <option>Navigators</option>
+                      <option>Diplomats</option>
+                      <option>Guardians</option>
                     </select>
                   </div>
                 </div>
@@ -101,60 +101,60 @@
             </form>
           </section>
 
-          <section class="grid reveal" id="character-list">
-            <article class="card" data-filter-item data-role="Archivist" data-era="Convergence Era" data-lineage="Veyari">
+          <section class="grid reveal" id="species-list">
+            <article class="card" data-filter-item data-origin="Skybound Terraces" data-era="Founding Dawn" data-role="Navigators">
               <div class="card-header">
-                <span class="card-tag">Archivist</span>
-                <div class="card-title">Liora Kesh</div>
-                <p>Keeper of the Resonant Codex and guide to the memory vaults.</p>
+                <span class="card-tag">Echo-born</span>
+                <div class="card-title">Veyari Echo-Born</div>
+                <p>Celestial navigators who translate resonance into star charts.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Lineage:</span> Veyari</p>
-                  <p><span>Era:</span> Convergence Era</p>
-                  <p><span>Signature focus:</span> Codex preservation</p>
+                  <p><span>Origin realm:</span> Skybound Terraces</p>
+                  <p><span>Era discovered:</span> Founding Dawn</p>
+                  <p><span>Primary role:</span> Navigators</p>
                 </div>
-                <a class="button secondary" href="character-liora-kesh.html">Open dossier</a>
+                <a class="button secondary" href="species/species-veyari-echo-born.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-role="Envoy" data-era="Crystal Age" data-lineage="Meralis">
+            <article class="card" data-filter-item data-origin="Mirror Sea" data-era="Crystal Age" data-role="Diplomats">
               <div class="card-header">
-                <span class="card-tag">Envoy</span>
-                <div class="card-title">Tarek of the Nine Lights</div>
-                <p>Diplomat who forged the Skybridge Accords in the Crystal Age.</p>
+                <span class="card-tag">Tidebound</span>
+                <div class="card-title">Meralis Tidemancers</div>
+                <p>Oceanic diplomats who braid water and light into memory threads.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Lineage:</span> Meralis</p>
-                  <p><span>Era:</span> Crystal Age</p>
-                  <p><span>Signature focus:</span> Treaty forging</p>
+                  <p><span>Origin realm:</span> Mirror Sea</p>
+                  <p><span>Era discovered:</span> Crystal Age</p>
+                  <p><span>Primary role:</span> Diplomats</p>
                 </div>
-                <a class="button secondary" href="character-tarek-nine-lights.html">Open dossier</a>
+                <a class="button secondary" href="species/species-meralis-tidemancers.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-role="Explorer" data-era="Radiant Age" data-lineage="Solarii">
+            <article class="card" data-filter-item data-origin="Obsidian Belt" data-era="Resonance Era" data-role="Guardians">
               <div class="card-header">
-                <span class="card-tag">Explorer</span>
-                <div class="card-title">Asha Miraen</div>
-                <p>Star cartographer mapping the hidden paths between Li'Ona realms.</p>
+                <span class="card-tag">Crystalline</span>
+                <div class="card-title">Solarii Prismkin</div>
+                <p>Beings forged in luminous crystal, guardians of ancient harmony halls.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Lineage:</span> Solarii</p>
-                  <p><span>Era:</span> Radiant Age</p>
-                  <p><span>Signature focus:</span> Rift cartography</p>
+                  <p><span>Origin realm:</span> Obsidian Belt</p>
+                  <p><span>Era discovered:</span> Resonance Era</p>
+                  <p><span>Primary role:</span> Guardians</p>
                 </div>
-                <a class="button secondary" href="character-asha-miraen.html">Open dossier</a>
+                <a class="button secondary" href="species/species-solarii-prismkin.html">Open dossier</a>
               </div>
             </article>
-            <p class="empty-state" role="status" hidden>No characters match your filters yet.</p>
+            <p class="empty-state" role="status" hidden>No species match your filters yet.</p>
           </section>
         </main>
 
         <footer class="footer">
           <div class="footer-links">
             <a href="archive-index.html">Index</a>
-            <a href="species.html">Species</a>
+            <a href="characters.html">Characters</a>
             <a href="history.html">History</a>
             <a href="locations.html">Locations</a>
           </div>
@@ -190,14 +190,14 @@
     </div>
 
     <nav class="bottom-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="archive-index.html">Archive Index</a>
-      <a href="species.html">Species</a>
-      <a href="characters.html" aria-current="page">Characters</a>
+      <a href="species.html" aria-current="page">Species</a>
+      <a href="characters.html">Characters</a>
       <a href="history.html">History</a>
       <a href="locations.html">Locations</a>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="../assets/script.js"></script>
   </body>
 </html>

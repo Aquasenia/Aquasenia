@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Li'Ona Archives | Species</title>
+    <title>The Li'Ona Archives | Locations</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../assets/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,38 +23,38 @@
           </button>
         </div>
         <nav id="site-nav" class="nav">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
           <a href="archive-index.html">Archive Index</a>
-          <a href="species.html" aria-current="page">Species</a>
+          <a href="species.html">Species</a>
           <a href="characters.html">Characters</a>
           <a href="history.html">History</a>
-          <a href="locations.html">Locations</a>
+          <a href="locations.html" aria-current="page">Locations</a>
         </nav>
         <div class="sidebar-card">
-          Species dossiers covering biology, culture, and interstellar alliances.
+          Map the sanctuaries, city-states, and wild frontiers of Li'Ona.
         </div>
       </aside>
 
       <div class="content">
         <main id="main">
           <header class="reveal">
-            <h1 class="page-title">Species Directory</h1>
+            <h1 class="page-title">Location Atlas</h1>
             <p class="page-subtitle">
-              Trace the lineages of Li'Ona, from crystalline oceanfolk to star-tempered nomads.
+              Discover the realms where Li'Ona civilizations thrive, from floating groves to hidden reefs.
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="species-list">
-            <h2>Search species</h2>
+          <section class="search-panel reveal" data-filter-target="location-list">
+            <h2>Search locations</h2>
             <form>
               <div class="search-field">
-                <label for="species-search">Keyword search</label>
+                <label for="location-search">Keyword search</label>
                 <div class="search-input-wrapper">
                   <input
                     class="search-input"
-                    id="species-search"
-                    name="species-search"
-                    placeholder="Search by lineage, biome, or trait"
+                    id="location-search"
+                    name="location-search"
+                    placeholder="Search by realm, biome, or landmark"
                     type="search"
                   />
                   <button class="search-clear" type="button" aria-label="Clear search">×</button>
@@ -66,30 +66,30 @@
               <div class="search-filters">
                 <div class="grid">
                   <div class="search-field">
-                    <label for="species-origin">Origin realm</label>
-                    <select class="search-select" id="species-origin" name="species-origin" data-filter-key="origin">
-                      <option>All origins</option>
+                    <label for="location-region">Region</label>
+                    <select class="search-select" id="location-region" name="location-region" data-filter-key="region">
+                      <option>All regions</option>
                       <option>Skybound Terraces</option>
                       <option>Mirror Sea</option>
                       <option>Obsidian Belt</option>
                     </select>
                   </div>
                   <div class="search-field">
-                    <label for="species-era">Era discovered</label>
-                    <select class="search-select" id="species-era" name="species-era" data-filter-key="era">
+                    <label for="location-era">Era</label>
+                    <select class="search-select" id="location-era" name="location-era" data-filter-key="era">
                       <option>All eras</option>
                       <option>Founding Dawn</option>
                       <option>Crystal Age</option>
-                      <option>Resonance Era</option>
+                      <option>Radiant Age</option>
                     </select>
                   </div>
                   <div class="search-field">
-                    <label for="species-role">Primary role</label>
-                    <select class="search-select" id="species-role" name="species-role" data-filter-key="role">
-                      <option>All roles</option>
-                      <option>Navigators</option>
-                      <option>Diplomats</option>
-                      <option>Guardians</option>
+                    <label for="location-status">Status</label>
+                    <select class="search-select" id="location-status" name="location-status" data-filter-key="status">
+                      <option>All statuses</option>
+                      <option>Active</option>
+                      <option>Shrouded</option>
+                      <option>Ruins</option>
                     </select>
                   </div>
                 </div>
@@ -101,62 +101,62 @@
             </form>
           </section>
 
-          <section class="grid reveal" id="species-list">
-            <article class="card" data-filter-item data-origin="Skybound Terraces" data-era="Founding Dawn" data-role="Navigators">
+          <section class="grid reveal" id="location-list">
+            <article class="card" data-filter-item data-region="Skybound Terraces" data-era="Founding Dawn" data-status="Active">
               <div class="card-header">
-                <span class="card-tag">Echo-born</span>
-                <div class="card-title">Veyari Echo-Born</div>
-                <p>Celestial navigators who translate resonance into star charts.</p>
+                <span class="card-tag">Sky sanctuary</span>
+                <div class="card-title">The Aetheric Grove</div>
+                <p>Floating forests where the sky-bloom trees sing with ambient light.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Origin realm:</span> Skybound Terraces</p>
-                  <p><span>Era discovered:</span> Founding Dawn</p>
-                  <p><span>Primary role:</span> Navigators</p>
+                  <p><span>Region:</span> Skybound Terraces</p>
+                  <p><span>Era:</span> Founding Dawn</p>
+                  <p><span>Status:</span> Active sanctuary</p>
                 </div>
-                <a class="button secondary" href="species-veyari-echo-born.html">Open dossier</a>
+                <a class="button secondary" href="locations/location-aetheric-grove.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-origin="Mirror Sea" data-era="Crystal Age" data-role="Diplomats">
+            <article class="card" data-filter-item data-region="Mirror Sea" data-era="Crystal Age" data-status="Shrouded">
               <div class="card-header">
-                <span class="card-tag">Tidebound</span>
-                <div class="card-title">Meralis Tidemancers</div>
-                <p>Oceanic diplomats who braid water and light into memory threads.</p>
+                <span class="card-tag">Oceanic</span>
+                <div class="card-title">Mirror Sea Reefs</div>
+                <p>Prismatic reefs that reflect the past in their luminous coral.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Origin realm:</span> Mirror Sea</p>
-                  <p><span>Era discovered:</span> Crystal Age</p>
-                  <p><span>Primary role:</span> Diplomats</p>
+                  <p><span>Region:</span> Mirror Sea</p>
+                  <p><span>Era:</span> Crystal Age</p>
+                  <p><span>Status:</span> Shrouded</p>
                 </div>
-                <a class="button secondary" href="species-meralis-tidemancers.html">Open dossier</a>
+                <a class="button secondary" href="locations/location-mirror-sea-reefs.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-origin="Obsidian Belt" data-era="Resonance Era" data-role="Guardians">
+            <article class="card" data-filter-item data-region="Obsidian Belt" data-era="Radiant Age" data-status="Active">
               <div class="card-header">
-                <span class="card-tag">Crystalline</span>
-                <div class="card-title">Solarii Prismkin</div>
-                <p>Beings forged in luminous crystal, guardians of ancient harmony halls.</p>
+                <span class="card-tag">Citadel</span>
+                <div class="card-title">Citadel of Nine Currents</div>
+                <p>A rotating city-state powered by tidal energy and ancient glyphs.</p>
               </div>
               <div class="card-details">
                 <div class="card-meta">
-                  <p><span>Origin realm:</span> Obsidian Belt</p>
-                  <p><span>Era discovered:</span> Resonance Era</p>
-                  <p><span>Primary role:</span> Guardians</p>
+                  <p><span>Region:</span> Obsidian Belt</p>
+                  <p><span>Era:</span> Radiant Age</p>
+                  <p><span>Status:</span> Active</p>
                 </div>
-                <a class="button secondary" href="species-solarii-prismkin.html">Open dossier</a>
+                <a class="button secondary" href="locations/location-citadel-nine-currents.html">Open dossier</a>
               </div>
             </article>
-            <p class="empty-state" role="status" hidden>No species match your filters yet.</p>
+            <p class="empty-state" role="status" hidden>No locations match your filters yet.</p>
           </section>
         </main>
 
         <footer class="footer">
           <div class="footer-links">
             <a href="archive-index.html">Index</a>
+            <a href="species.html">Species</a>
             <a href="characters.html">Characters</a>
             <a href="history.html">History</a>
-            <a href="locations.html">Locations</a>
           </div>
           <div class="socials">
             <a href="#" aria-label="Visit the Li'Ona Archives on Lumina">
@@ -190,14 +190,14 @@
     </div>
 
     <nav class="bottom-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="archive-index.html">Archive Index</a>
-      <a href="species.html" aria-current="page">Species</a>
+      <a href="species.html">Species</a>
       <a href="characters.html">Characters</a>
       <a href="history.html">History</a>
-      <a href="locations.html">Locations</a>
+      <a href="locations.html" aria-current="page">Locations</a>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="../assets/script.js"></script>
   </body>
 </html>
