@@ -59,65 +59,8 @@
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="character-list">
-            <h2>Search characters</h2>
-            <form>
-              <div class="search-field">
-                <label for="character-search">Keyword search</label>
-                <div class="search-input-wrapper">
-                  <input
-                    class="search-input"
-                    id="character-search"
-                    name="character-search"
-                    placeholder="Search by name, title, or calling"
-                    type="search"
-                  />
-                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
-                </div>
-              </div>
-              <button class="filter-toggle" type="button" aria-expanded="false">
-                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="search-filters">
-                <div class="grid">
-                  <div class="search-field">
-                    <label for="character-role">Role</label>
-                    <select class="search-select" id="character-role" name="character-role" data-filter-key="role">
-                      <option>All roles</option>
-                      <option>Archivist</option>
-                      <option>Envoy</option>
-                      <option>Explorer</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="character-era">Era</label>
-                    <select class="search-select" id="character-era" name="character-era" data-filter-key="era">
-                      <option>All eras</option>
-                      <option>Convergence Era</option>
-                      <option>Crystal Age</option>
-                      <option>Radiant Age</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="character-lineage">Lineage</label>
-                    <select class="search-select" id="character-lineage" name="character-lineage" data-filter-key="lineage">
-                      <option>All lineages</option>
-                      <option>Veyari</option>
-                      <option>Meralis</option>
-                      <option>Solarii</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-feedback">
-                <p class="results-count" aria-live="polite"></p>
-                <button class="filter-reset" type="button">Reset filters</button>
-              </div>
-            </form>
-          </section>
-
           <section class="grid reveal" id="character-list">
-            <article class="card" data-filter-item data-role="Archivist" data-era="Convergence Era" data-lineage="Veyari">
+            <article class="card">
               <div class="card-header">
                 <span class="card-tag">Archivist</span>
                 <div class="card-title">Liora Kesh</div>
@@ -132,7 +75,7 @@
                 <a class="button secondary" href="characters/character-liora-kesh.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-role="Envoy" data-era="Crystal Age" data-lineage="Meralis">
+            <article class="card">
               <div class="card-header">
                 <span class="card-tag">Envoy</span>
                 <div class="card-title">Tarek of the Nine Lights</div>
@@ -147,7 +90,7 @@
                 <a class="button secondary" href="characters/character-tarek-nine-lights.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-role="Explorer" data-era="Radiant Age" data-lineage="Solarii">
+            <article class="card">
               <div class="card-header">
                 <span class="card-tag">Explorer</span>
                 <div class="card-title">Asha Miraen</div>
@@ -162,7 +105,6 @@
                 <a class="button secondary" href="characters/character-asha-miraen.html">Open dossier</a>
               </div>
             </article>
-            <p class="empty-state" role="status" hidden>No characters match your filters yet.</p>
           </section>
         </main>
 

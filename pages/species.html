@@ -59,65 +59,8 @@
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="species-list">
-            <h2>Search species</h2>
-            <form>
-              <div class="search-field">
-                <label for="species-search">Keyword search</label>
-                <div class="search-input-wrapper">
-                  <input
-                    class="search-input"
-                    id="species-search"
-                    name="species-search"
-                    placeholder="Search by lineage, biome, or trait"
-                    type="search"
-                  />
-                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
-                </div>
-              </div>
-              <button class="filter-toggle" type="button" aria-expanded="false">
-                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="search-filters">
-                <div class="grid">
-                  <div class="search-field">
-                    <label for="species-origin">Origin realm</label>
-                    <select class="search-select" id="species-origin" name="species-origin" data-filter-key="origin">
-                      <option>All origins</option>
-                      <option>Skybound Terraces</option>
-                      <option>Mirror Sea</option>
-                      <option>Obsidian Belt</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="species-era">Era discovered</label>
-                    <select class="search-select" id="species-era" name="species-era" data-filter-key="era">
-                      <option>All eras</option>
-                      <option>Founding Dawn</option>
-                      <option>Crystal Age</option>
-                      <option>Resonance Era</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="species-role">Primary role</label>
-                    <select class="search-select" id="species-role" name="species-role" data-filter-key="role">
-                      <option>All roles</option>
-                      <option>Navigators</option>
-                      <option>Diplomats</option>
-                      <option>Guardians</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-feedback">
-                <p class="results-count" aria-live="polite"></p>
-                <button class="filter-reset" type="button">Reset filters</button>
-              </div>
-            </form>
-          </section>
-
           <section class="grid reveal" id="species-list">
-            <article class="card" data-filter-item data-origin="Skybound Terraces" data-era="Founding Dawn" data-role="Navigators">
+            <article class="card">
               <div class="card-header">
                 <span class="card-tag">Echo-born</span>
                 <div class="card-title">Veyari Echo-Born</div>
@@ -132,7 +75,7 @@
                 <a class="button secondary" href="species/species-veyari-echo-born.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-origin="Mirror Sea" data-era="Crystal Age" data-role="Diplomats">
+            <article class="card">
               <div class="card-header">
                 <span class="card-tag">Tidebound</span>
                 <div class="card-title">Meralis Tidemancers</div>
@@ -147,7 +90,7 @@
                 <a class="button secondary" href="species/species-meralis-tidemancers.html">Open dossier</a>
               </div>
             </article>
-            <article class="card" data-filter-item data-origin="Obsidian Belt" data-era="Resonance Era" data-role="Guardians">
+            <article class="card">
               <div class="card-header">
                 <span class="card-tag">Crystalline</span>
                 <div class="card-title">Solarii Prismkin</div>
@@ -162,7 +105,6 @@
                 <a class="button secondary" href="species/species-solarii-prismkin.html">Open dossier</a>
               </div>
             </article>
-            <p class="empty-state" role="status" hidden>No species match your filters yet.</p>
           </section>
         </main>
 
