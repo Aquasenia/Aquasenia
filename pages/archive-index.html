@@ -59,72 +59,8 @@
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="index-list">
-            <h2>Search the archive</h2>
-            <form>
-              <div class="search-field">
-                <label for="index-search">Keyword search</label>
-                <div class="search-input-wrapper">
-                  <input
-                    class="search-input"
-                    id="index-search"
-                    name="index-search"
-                    placeholder="Search by title, relic, or glyph"
-                    type="search"
-                  />
-                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
-                </div>
-              </div>
-              <button class="filter-toggle" type="button" aria-expanded="false">
-                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="search-filters">
-                <div class="grid">
-                  <div class="search-field">
-                    <label for="index-category">Category</label>
-                    <select class="search-select" id="index-category" name="index-category" data-filter-key="category">
-                      <option>All categories</option>
-                      <option>Species</option>
-                      <option>Characters</option>
-                      <option>History</option>
-                      <option>Locations</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="index-era">Era</label>
-                    <select class="search-select" id="index-era" name="index-era" data-filter-key="era">
-                      <option>All eras</option>
-                      <option>Founding Dawn</option>
-                      <option>Crystal Age</option>
-                      <option>Convergence Era</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="index-theme">Attribute</label>
-                    <select class="search-select" id="index-theme" name="index-theme" data-filter-key="attribute">
-                      <option>All attributes</option>
-                      <option>Diplomacy</option>
-                      <option>Exploration</option>
-                      <option>Magitech</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-feedback">
-                <p class="results-count" aria-live="polite"></p>
-                <button class="filter-reset" type="button">Reset filters</button>
-              </div>
-            </form>
-          </section>
-
           <section class="index-list reveal" id="index-list">
-            <article
-              class="card index-card"
-              data-filter-item
-              data-category="Species"
-              data-era="Founding Dawn"
-              data-attribute="Exploration"
-            >
+            <article class="card index-card">
               <div class="index-card-header">
                 <div class="icon-badge">S</div>
                 <div class="card-header">
@@ -142,13 +78,7 @@
                 <a class="button secondary" href="species/species-veyari-echo-born.html">Open species dossier</a>
               </div>
             </article>
-            <article
-              class="card index-card"
-              data-filter-item
-              data-category="Characters"
-              data-era="Convergence Era"
-              data-attribute="Diplomacy"
-            >
+            <article class="card index-card">
               <div class="index-card-header">
                 <div class="icon-badge">C</div>
                 <div class="card-header">
@@ -166,13 +96,7 @@
                 <a class="button secondary" href="characters/character-liora-kesh.html">Open character ledger</a>
               </div>
             </article>
-            <article
-              class="card index-card"
-              data-filter-item
-              data-category="History"
-              data-era="Crystal Age"
-              data-attribute="Diplomacy"
-            >
+            <article class="card index-card">
               <div class="index-card-header">
                 <div class="icon-badge">H</div>
                 <div class="card-header">
@@ -190,13 +114,7 @@
                 <a class="button secondary" href="history/history-night-ten-auroras.html">Open timeline entry</a>
               </div>
             </article>
-            <article
-              class="card index-card"
-              data-filter-item
-              data-category="Locations"
-              data-era="Founding Dawn"
-              data-attribute="Magitech"
-            >
+            <article class="card index-card">
               <div class="index-card-header">
                 <div class="icon-badge">L</div>
                 <div class="card-header">
@@ -214,7 +132,6 @@
                 <a class="button secondary" href="locations/location-aetheric-grove.html">Open location atlas</a>
               </div>
             </article>
-            <p class="empty-state" role="status" hidden>No results found. Try adjusting your search.</p>
           </section>
         </main>
 

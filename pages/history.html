@@ -59,65 +59,8 @@
             </p>
           </header>
 
-          <section class="search-panel reveal" data-filter-target="history-timeline">
-            <h2>Search history</h2>
-            <form>
-              <div class="search-field">
-                <label for="history-search">Keyword search</label>
-                <div class="search-input-wrapper">
-                  <input
-                    class="search-input"
-                    id="history-search"
-                    name="history-search"
-                    placeholder="Search by event, treaty, or era"
-                    type="search"
-                  />
-                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
-                </div>
-              </div>
-              <button class="filter-toggle" type="button" aria-expanded="false">
-                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="search-filters">
-                <div class="grid">
-                  <div class="search-field">
-                    <label for="history-era">Era</label>
-                    <select class="search-select" id="history-era" name="history-era" data-filter-key="era">
-                      <option>All eras</option>
-                      <option>Founding Dawn</option>
-                      <option>Crystal Age</option>
-                      <option>Convergence Era</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="history-theme">Theme</label>
-                    <select class="search-select" id="history-theme" name="history-theme" data-filter-key="theme">
-                      <option>All themes</option>
-                      <option>Diplomacy</option>
-                      <option>Conflict</option>
-                      <option>Discovery</option>
-                    </select>
-                  </div>
-                  <div class="search-field">
-                    <label for="history-scale">Scale</label>
-                    <select class="search-select" id="history-scale" name="history-scale" data-filter-key="scale">
-                      <option>All scales</option>
-                      <option>Interstellar</option>
-                      <option>Regional</option>
-                      <option>Local</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-feedback">
-                <p class="results-count" aria-live="polite"></p>
-                <button class="filter-reset" type="button">Reset filters</button>
-              </div>
-            </form>
-          </section>
-
           <section class="timeline reveal" id="history-timeline">
-            <details data-filter-item data-era="Founding Dawn" data-theme="Diplomacy" data-scale="Interstellar">
+            <details>
               <summary>
                 <span class="timeline-marker"></span>
                 <div>
@@ -129,7 +72,7 @@
                 The Lumina Pact established shared travel lanes and a unified archive council.
               </div>
             </details>
-            <details data-filter-item data-era="Crystal Age" data-theme="Conflict" data-scale="Regional">
+            <details>
               <summary>
                 <span class="timeline-marker"></span>
                 <div>
@@ -141,7 +84,7 @@
                 Representatives gathered beneath aurora storms to sign the Skybridge Accords.
               </div>
             </details>
-            <details data-filter-item data-era="Convergence Era" data-theme="Discovery" data-scale="Local">
+            <details>
               <summary>
                 <span class="timeline-marker"></span>
                 <div>
@@ -153,7 +96,6 @@
                 Archivist Liora Kesh led the vaulting of the codex after the Nebula Breach.
               </div>
             </details>
-            <p class="empty-state" role="status" hidden>No timeline events match your filters yet.</p>
           </section>
         </main>
 
