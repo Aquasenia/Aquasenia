@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,111 +37,113 @@
           <a href="../history.html">History</a>
           <a href="../locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Character dossiers spotlight the legends shaping Li'Ona's future.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">Character dossier</p>
             <h1 class="page-title">Tarek of the Nine Lights</h1>
-            <p class="page-subtitle">
-              Diplomatic envoy who forged the Skybridge Accords and brokered interstellar peace.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Role</strong>
-              <span>Envoy</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  Tarek Nine-Lights is a Meralis envoy who forged the Skybridge Accords and unified nine
+                  city-states during the Crystal Age. His diplomatic style blends ritual mediation with
+                  clear, practical translation between cultures. The agreements he shaped still guide
+                  interstellar travel and peacekeeping today.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Character; Meralis envoy and treaty architect.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Role: Envoy.</li>
+                  <li>Era: Crystal Age.</li>
+                  <li>Lineage: Meralis.</li>
+                  <li>Signature focus: Treaty forging and diplomatic translation.</li>
+                  <li>Architect of the Skybridge Accords.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  Tarek uses tide-lens seals, star-chord lexicons, and resonance braids to translate between
+                  disparate cultures. He maintains a rotating council of advisors and trains apprentices in
+                  empathy-driven bargaining aboard the Skybridge sanctum.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  Rising from the Mirror Sea, Tarek negotiated ceasefires during Crystal Age disputes and
+                  documented the first Skybridge Accord draft. His legacy endures through envoy schools,
+                  with the accords renewed every decade in his honor.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+                  <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+                  <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Era</strong>
-              <span>Crystal Age</span>
-            </div>
-            <div class="metric-card">
-              <strong>Lineage</strong>
-              <span>Meralis</span>
-            </div>
-            <div class="metric-card">
-              <strong>Signature focus</strong>
-              <span>Treaty forging</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Profile</div>
-              <p>
-                Tarek earned the title of Nine Lights by weaving nine city-states into a single accord.
-                His diplomacy remains a model for Crystal Age councils.
-              </p>
-              <div class="card-meta">
-                <p><span>Lineage:</span> Meralis</p>
-                <p><span>Era:</span> Crystal Age</p>
-                <p><span>Signature focus:</span> Treaty forging</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Key notes</div>
-              <ul class="entry-list">
-                <li>Architect of the Skybridge Accords during the Night of Ten Auroras.</li>
-                <li>Known for translating Mirror Sea treaty glyphs to starborne dialects.</li>
-                <li>Maintains envoy schools for emerging diplomats.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Rise of Nine Lights</h2>
-              </div>
-              <p>
-                Tarek began as a tidebound envoy in the Mirror Sea, earning trust across nine rival
-                city-states by combining Meralis ritual diplomacy with Veyari resonance mediation.
-              </p>
-              <ul class="lore-list">
-                <li>Negotiated ceasefires during the Crystal Age tidal disputes.</li>
-                <li>Unified stormwatcher guilds under a shared oath.</li>
-                <li>Documented the first Skybridge Accord draft.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-key" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Diplomatic tools</h2>
-              </div>
-              <p>
-                His envoy kit includes tide-lens seals, star-chord lexicons, and portable resonance braids,
-                all used to translate between disparate cultures in tense negotiations.
-              </p>
-              <ul class="lore-list">
-                <li>Maintains a rotating council of advisors from allied lineages.</li>
-                <li>Hosts mediation circles aboard the Skybridge sanctum.</li>
-                <li>Trains apprentices in empathy-driven bargaining.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-scroll" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Enduring legacy</h2>
-              </div>
-              <p>
-                Tarek’s accords still govern interstellar travel rights, and his envoy school continues to
-                produce negotiators trusted across the Li'Ona systems.
-              </p>
-              <ul class="lore-list">
-                <li>Skybridge Accords are renewed every decade in his honor.</li>
-                <li>His speeches are preserved in the Resonant Codex.</li>
-                <li>Mentors assign apprentices to shadow his annual pilgrimage.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Tarek Nine-Lights</dd>
+                <dt>Category</dt>
+                <dd>Character</dd>
+                <dt>Status</dt>
+                <dd>Unknown</dd>
+                <dt>First appearance</dt>
+                <dd>Crystal Age</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

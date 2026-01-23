@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,12 +37,44 @@
           <a href="../history.html">History</a>
           <a href="../locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Species dossiers covering biology, culture, and interstellar alliances.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">
@@ -50,122 +82,71 @@
               Species dossier
             </p>
             <h1 class="page-title">Veyari Echo-Born</h1>
-            <p class="page-subtitle">
-              Bio-luminescent navigators who translate resonance into star charts and chart the rifts
-              between star currents.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Lifespan</strong>
-              <span>150–190 sky cycles</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  The Veyari Echo-Born are bio-luminescent navigators who read resonance patterns in the star
+                  currents. They live in the Skybound Terraces and chart safe routes through rift corridors
+                  for every allied fleet. Their communities are built on shared songs, calm diplomacy, and
+                  a living archive of travel chants.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Species of resonance-guided navigators aligned with the Skybridge Accords.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Lifespan averages 150–190 sky cycles.</li>
+                  <li>Average height is 1.8 meters with bioluminescent skin.</li>
+                  <li>Navigation rituals rely on harmonic choral pulses.</li>
+                  <li>Diplomatic status with humans remains neutral.</li>
+                  <li>Primary role is charting resonance routes for shared travel.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  Veyari bodies store resonance in sub-dermal echo sacs, letting their luminescent patterns
+                  shift with every change in the star currents. Their gatherings feel like living songs,
+                  with elders guiding crews through call-and-response navigation rituals.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  The Echo-Born emerged from early Skybound settlements during the Founding Dawn. They
+                  codified harmonic charts inside the Resonant Codex, opening safe trade lanes that later
+                  formed the backbone of the Skybridge Accords.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+                  <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+                  <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Average height</strong>
-              <span>1.8 meters</span>
-            </div>
-            <div class="metric-card">
-              <strong>Average weight</strong>
-              <span>68 kilograms</span>
-            </div>
-            <div class="metric-card">
-              <strong>Relationship with humans</strong>
-              <span>Neutral</span>
-            </div>
-            <div class="metric-card">
-              <strong>Species status</strong>
-              <span>Stable</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Overview</div>
-              <p>
-                The Veyari Echo-Born are revered for their attunement to sonic maps hidden in cosmic tides.
-                Their lore centers on migration, harmonic diplomacy, and safeguarding the Resonant Codex.
-              </p>
-              <div class="card-meta">
-                <p><span>Origin realm:</span> Skybound Terraces</p>
-                <p><span>Era discovered:</span> Founding Dawn</p>
-                <p><span>Primary role:</span> Navigators</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Key traits</div>
-              <ul class="entry-list">
-                <li>Bio-luminescent skin patterns that shift with ambient resonance.</li>
-                <li>Navigation rituals performed through harmonic choral pulses.</li>
-                <li>Allied with the Skybridge Accords as neutral pathfinders.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-dna" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Biology &amp; Anatomy</h2>
-              </div>
-              <p>
-                Veyari bodies store resonance in sub-dermal echo sacs, letting their luminescent patterns
-                shift in response to changing star currents.
-              </p>
-              <ul class="lore-list">
-                <li>Bio-luminescent skin aligns with harmonic flight songs.</li>
-                <li>Inner ear fins read micro-vibrations in rift corridors.</li>
-                <li>Echo sacs preserve lineage chants for navigation.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Deities &amp; Religions</h2>
-              </div>
-              <p>
-                Their faith honors the Skybound Chorus, a constellation of guiding spirits who, they say,
-                hum the safest paths through the rift currents.
-              </p>
-              <ul class="lore-list">
-                <li>Route singers offer first-light chants before any crossing.</li>
-                <li>Sky shrines are built atop terraces for nightly observances.</li>
-                <li>Festival skies fill with lanterns to honor lost voyagers.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Background</h2>
-              </div>
-              <p>
-                The Echo-Born emerged from early Skybound settlements as navigators, mapping resonance routes
-                that allowed trade and diplomacy to expand across the rift corridors.
-              </p>
-              <ul class="lore-list">
-                <li>Peace routes are logged in the Resonant Codex for shared access.</li>
-                <li>Founding elders codified harmonic charts for future crews.</li>
-                <li>Joint expeditions reinforce trust with Solarii and Meralis crews.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Culture &amp; Training</h2>
-              </div>
-              <p>
-                Veyari gatherings are orchestrated like living songs, with elders directing harmonic call
-                and response to align travelers to the skies above the Skybound Terraces.
-              </p>
-              <ul class="lore-list">
-                <li>Choral councils set voyage blessings before every expedition.</li>
-                <li>Echo bands attune starships with rhythm-coded coordinates.</li>
-                <li>Rift simulators mirror storms to rehearse crisis navigation.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Veyari Echo-Born</dd>
+                <dt>Category</dt>
+                <dd>Species</dd>
+                <dt>Status</dt>
+                <dd>Active</dd>
+                <dt>First appearance</dt>
+                <dd>Founding Dawn</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

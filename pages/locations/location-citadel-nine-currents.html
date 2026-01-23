@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,12 +37,44 @@
           <a href="../history.html">History</a>
           <a href="../locations.html" aria-current="page">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Map the sanctuaries, city-states, and wild frontiers of Li'Ona.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">
@@ -50,102 +82,71 @@
               Location dossier
             </p>
             <h1 class="page-title">Citadel of Nine Currents</h1>
-            <p class="page-subtitle">
-              A rotating city-state powered by tidal energy and ancient glyphs that keep Li'Ona's
-              currents in balance.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Region</strong>
-              <span>Obsidian Belt</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  The Citadel of Nine Currents is a rotating city-state in the Obsidian Belt that balances
+                  tidal energy with ancient glyphwork. Its moving terraces host council chambers, market
+                  rings, and archive spires that adapt to incoming envoys. The citadel serves as a civic
+                  anchor for diplomacy and security across the region.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Location; mobile citadel and council hub.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Region: Obsidian Belt.</li>
+                  <li>Landmark type: Citadel.</li>
+                  <li>Status: Active city-state.</li>
+                  <li>Tide engine core realigns the city during rift drift.</li>
+                  <li>Protected by Solarii Prismkin guardians.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  A ring of nine tide engines powers the citadel, syncing with Solarii resonance keys and
+                  luminous service canals. Rotating terraces reveal diplomacy halls, market promenades, and
+                  archive spires filled with live glyphwork.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  Built during the Radiant Age, the citadel became the seat of the Nine Currents council.
+                  Its rotating stewardship model ensures allied lineages share control of movement and
+                  security protocols through resonance attunement rites.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+                  <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+                  <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Era</strong>
-              <span>Radiant Age</span>
-            </div>
-            <div class="metric-card">
-              <strong>Status</strong>
-              <span>Active</span>
-            </div>
-            <div class="metric-card">
-              <strong>Landmark type</strong>
-              <span>Citadel</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Overview</div>
-              <p>
-                The Citadel of Nine Currents is a mobile metropolis that calibrates the flow of the
-                Obsidian Belt. Its council chambers are etched with living glyphs.
-              </p>
-              <div class="card-meta">
-                <p><span>Region:</span> Obsidian Belt</p>
-                <p><span>Era:</span> Radiant Age</p>
-                <p><span>Status:</span> Active</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Highlights</div>
-              <ul class="entry-list">
-                <li>Rotating terraces powered by tide engines.</li>
-                <li>Hosts the Nine Currents council and archive spires.</li>
-                <li>Protected by Solarii Prismkin guardians.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-gear" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Tide engine core</h2>
-              </div>
-              <p>
-                The citadel’s heart is a ring of nine tide engines that draw energy from the Obsidian
-                Belt’s currents, allowing the city to realign whenever rift drift is detected.
-              </p>
-              <ul class="lore-list">
-                <li>Engine cycles are synchronized with Solarii resonance keys.</li>
-                <li>Maintenance crews navigate luminous service canals.</li>
-                <li>Emergency locks engage during storm surges.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-city" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Rotating terraces</h2>
-              </div>
-              <p>
-                The terraces shift to expose different civic districts, from diplomacy halls to market
-                promenades, keeping the city adaptable to incoming envoys.
-              </p>
-              <ul class="lore-list">
-                <li>Archive spires contain live glyphwork for policy records.</li>
-                <li>Market rings are reserved for traveling artisans.</li>
-                <li>Veyari guides coordinate traffic during rotation events.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Council dynamics</h2>
-              </div>
-              <p>
-                The Nine Currents council governs through rotating chairs, ensuring each allied lineage
-                holds stewardship of the citadel’s movement and security protocols.
-              </p>
-              <ul class="lore-list">
-                <li>Decision sessions begin with a resonance attunement rite.</li>
-                <li>Meralis envoys oversee tide balance negotiations.</li>
-                <li>Solarii guardians maintain perimeter watchtowers.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Citadel of Nine Currents</dd>
+                <dt>Category</dt>
+                <dd>Location</dd>
+                <dt>Status</dt>
+                <dd>Active</dd>
+                <dt>First appearance</dt>
+                <dd>Radiant Age</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

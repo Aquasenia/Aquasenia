@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,12 +37,44 @@
           <a href="../history.html" aria-current="page">History</a>
           <a href="../locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Trace the turning points that shaped Li'Ona's societies and star alliances.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">
@@ -50,101 +82,78 @@
               History entry
             </p>
             <h1 class="page-title">The Night of Ten Auroras</h1>
-            <p class="page-subtitle">
-              The celestial convergence that ended the Astral Rift conflict and reshaped Li'Ona diplomacy.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Era logged</strong>
-              <span>Crystal Age</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  The Night of Ten Auroras was a Crystal Age convergence that ended the Astral Rift conflict
+                  and established the Skybridge Accords. Ten auroras aligned above the Mirror Sea, forcing
+                  rival fleets into a shared ceasefire window. The treaty signed that night reshaped Li'Ona
+                  diplomacy and opened stable travel corridors.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>History event; interstellar diplomatic convergence.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Era logged: Crystal Age.</li>
+                  <li>Archive code: HI-041.</li>
+                  <li>Primary attribute: Diplomacy.</li>
+                  <li>Scale: Interstellar.</li>
+                  <li>Ended the Astral Rift conflict between nine city-states.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  A convergence of resonance storms pushed rival fleets beneath the same aurora canopy.
+                  Veyari pathfinders charted a temporary ceasefire corridor while Meralis envoys and Solarii
+                  guardians stabilized the Mirror Sea currents for negotiations.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  The accords were signed during a ceremony of ten luminous beacons reflected across the
+                  sea. Envoy guilds were founded afterward, and the first shared navigation atlas was
+                  commissioned to maintain open corridors.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+                  <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+                  <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Sources / Notes</h2>
+                <ul class="entry-list">
+                  <li>Archive Index transcript HI-041, Skybridge Accord signatures.</li>
+                  <li>Mirror Sea resonance logs, Crystal Age convergence cycle.</li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Primary attribute</strong>
-              <span>Diplomacy</span>
-            </div>
-            <div class="metric-card">
-              <strong>Archive code</strong>
-              <span>HI-041</span>
-            </div>
-            <div class="metric-card">
-              <strong>Scale</strong>
-              <span>Interstellar</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Overview</div>
-              <p>
-                During the Crystal Age, ten auroras aligned above the Mirror Sea, creating a window for
-                peace talks. The Skybridge Accords were signed beneath the aurora canopy.
-              </p>
-              <div class="card-meta">
-                <p><span>Era logged:</span> Crystal Age</p>
-                <p><span>Primary attribute:</span> Diplomacy</p>
-                <p><span>Archive code:</span> HI-041</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Key outcomes</div>
-              <ul class="entry-list">
-                <li>Ended the Astral Rift conflict between the nine city-states.</li>
-                <li>Established the Skybridge Accords and diplomatic corridors.</li>
-                <li>Marked the rise of envoy guilds led by Tarek of the Nine Lights.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-dove" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Prelude to peace</h2>
-              </div>
-              <p>
-                A convergence of resonance storms forced rival fleets to shelter under the same aurora
-                canopy, giving diplomats a rare opportunity to negotiate without shifting battle lines.
-              </p>
-              <ul class="lore-list">
-                <li>Veyari pathfinders charted a temporary ceasefire corridor.</li>
-                <li>Meralis envoys brought tide-lens seals to verify intent.</li>
-                <li>Solarii guardians stabilized the Mirror Sea currents.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-scroll" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Ceremony of the ten lights</h2>
-              </div>
-              <p>
-                The accords were signed during a ritual where each city-state lit a beacon, creating a ring
-                of ten luminous pillars reflected across the Mirror Sea.
-              </p>
-              <ul class="lore-list">
-                <li>Accords were recorded into crystal coral for archival permanence.</li>
-                <li>Envoy guilds were founded to sustain cross-system dialogue.</li>
-                <li>The first shared navigation atlas was commissioned.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Legacy</h2>
-              </div>
-              <p>
-                The Night of Ten Auroras remains a diplomatic touchstone, inspiring annual gatherings that
-                reaffirm cooperative travel and open knowledge exchange.
-              </p>
-              <ul class="lore-list">
-                <li>Skybridge corridors are recalibrated every aurora season.</li>
-                <li>Archive Index hosts a remembrance symposium.</li>
-                <li>Envoy schools recreate the ceremony for new diplomats.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>The Night of Ten Auroras</dd>
+                <dt>Category</dt>
+                <dd>History</dd>
+                <dt>Status</dt>
+                <dd>Unknown</dd>
+                <dt>First appearance</dt>
+                <dd>Crystal Age</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

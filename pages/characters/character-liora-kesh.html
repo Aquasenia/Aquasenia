@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -37,111 +37,114 @@
           <a href="../history.html">History</a>
           <a href="../locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="../locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="../characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="../characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="../locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="../locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="../species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="../characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Character dossiers spotlight the legends shaping Li'Ona's future.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <p class="page-eyebrow">Character dossier</p>
             <h1 class="page-title">Liora Kesh</h1>
-            <p class="page-subtitle">
-              Archivist of the Resonant Codex and guardian of the memory vaults within Li'Ona.
-            </p>
           </header>
 
-          <section class="lore-metrics reveal">
-            <div class="metric-card">
-              <strong>Role</strong>
-              <span>Archivist</span>
+          <section class="article-layout reveal">
+            <div class="article-body">
+              <section class="article-section">
+                <h2>Summary</h2>
+                <p>
+                  Liora Kesh is the chief archivist of the Resonant Codex and the steady voice of Li'Ona's
+                  memory vaults. She guides seekers through sensitive records, balances diplomacy with
+                  preservation, and keeps fragile echoes from destabilizing the archive. Her leadership
+                  sets the ethical standard for every archivist in the council.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Classification / Type</h2>
+                <p>Character; Veyari archivist and council steward.</p>
+              </section>
+              <section class="article-section">
+                <h2>Key Facts</h2>
+                <ul class="entry-list">
+                  <li>Role: Archivist and guardian of the Resonant Codex.</li>
+                  <li>Era: Convergence Era.</li>
+                  <li>Lineage: Veyari.</li>
+                  <li>Signature focus: Codex preservation and resonance ethics.</li>
+                  <li>Oversaw vaulting protocols after the Nebula Breach.</li>
+                </ul>
+              </section>
+              <section class="article-section">
+                <h2>Description</h2>
+                <p>
+                  Liora oversees the memory vaults beneath the Archive Index, coordinating nightly
+                  resonance audits and working with Prismkin guardians during vault resets. She also
+                  leads the ethics forum, teaching archivists how to handle sensitive memories with
+                  consent-driven rituals.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>History</h2>
+                <p>
+                  Following the Nebula Breach, Liora established the threefold consent rite and rebuilt
+                  the Codex preservation workflow. She now compiles an interspecies chronicle that weaves
+                  Meralis memory threads with Veyari resonance logs for future councils.
+                </p>
+              </section>
+              <section class="article-section">
+                <h2>Related Entries</h2>
+                <ul class="entry-list">
+                  <li><a href="../species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+                  <li><a href="../species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+                  <li><a href="../history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+                </ul>
+              </section>
             </div>
-            <div class="metric-card">
-              <strong>Era</strong>
-              <span>Convergence Era</span>
-            </div>
-            <div class="metric-card">
-              <strong>Lineage</strong>
-              <span>Veyari</span>
-            </div>
-            <div class="metric-card">
-              <strong>Signature focus</strong>
-              <span>Codex preservation</span>
-            </div>
-          </section>
-
-          <section class="entry-grid reveal">
-            <article class="card">
-              <div class="card-title">Profile</div>
-              <p>
-                Liora Kesh serves as the living memory of Li'Ona's archive council, guiding seekers through
-                the Resonant Codex while protecting the vaults from destabilizing echoes.
-              </p>
-              <div class="card-meta">
-                <p><span>Lineage:</span> Veyari</p>
-                <p><span>Era:</span> Convergence Era</p>
-                <p><span>Signature focus:</span> Codex preservation</p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-title">Key notes</div>
-              <ul class="entry-list">
-                <li>Oversaw the vaulting of the Resonant Codex after the Nebula Breach.</li>
-                <li>Maintains the diplomatic memory threads used in council summits.</li>
-                <li>Mentors new archivists in resonance ethics and safeguard rituals.</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="lore-sheet reveal">
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Vault stewardship</h2>
-              </div>
-              <p>
-                Liora oversees the memory vaults beneath the Archive Index, ensuring that the Resonant Codex
-                remains stable and accessible to treaty envoys and historians alike.
-              </p>
-              <ul class="lore-list">
-                <li>Runs nightly resonance audits to prevent echo drift.</li>
-                <li>Catalogs lineage memories into tri-seal archives.</li>
-                <li>Coordinates with Prismkin guardians during vault resets.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-bell" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Resonance ethics</h2>
-              </div>
-              <p>
-                She leads the council’s ethics forum, teaching archivists to handle sensitive memories with
-                care and to shield vulnerable narratives from misuse.
-              </p>
-              <ul class="lore-list">
-                <li>Developed the threefold consent rite for memory consultation.</li>
-                <li>Hosts reflection circles for returning expedition crews.</li>
-                <li>Maintains a registry of sealed testimonies.</li>
-              </ul>
-            </div>
-            <div class="lore-divider" aria-hidden="true"></div>
-            <div class="lore-section">
-              <div class="lore-header">
-                <span class="lore-icon"><i class="fa-solid fa-feather" aria-hidden="true"></i></span>
-                <h2 class="lore-title">Current focus</h2>
-              </div>
-              <p>
-                Liora is compiling a new chronicle of interspecies alliances, weaving Meralis memory threads
-                with Veyari resonance logs to unify archival standards.
-              </p>
-              <ul class="lore-list">
-                <li>Preparing a public symposium for the Convergence anniversary.</li>
-                <li>Restoring damaged codex passages from the Nebula Breach.</li>
-                <li>Mentoring the next generation of archive pathfinders.</li>
-              </ul>
-            </div>
+            <aside class="infobox">
+              <h2 class="infobox-title">Infobox</h2>
+              <dl class="infobox-list">
+                <dt>Name</dt>
+                <dd>Liora Kesh</dd>
+                <dt>Category</dt>
+                <dd>Character</dd>
+                <dt>Status</dt>
+                <dd>Active</dd>
+                <dt>First appearance</dt>
+                <dd>Convergence Era</dd>
+              </dl>
+            </aside>
           </section>
 
           <section class="entry-actions reveal">

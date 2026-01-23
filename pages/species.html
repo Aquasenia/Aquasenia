@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
-  <body>
+  <body data-base="../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
@@ -30,12 +30,44 @@
           <a href="history.html">History</a>
           <a href="locations.html">Locations</a>
         </nav>
+        <details class="sidebar-index" open>
+          <summary>Index A–Z</summary>
+          <ul>
+            <li><a href="locations/location-aetheric-grove.html">The Aetheric Grove</a></li>
+            <li><a href="characters/character-liora-kesh.html">Archivist Liora Kesh</a></li>
+            <li><a href="characters/character-asha-miraen.html">Asha Miraen</a></li>
+            <li><a href="locations/location-citadel-nine-currents.html">Citadel of Nine Currents</a></li>
+            <li><a href="species/species-meralis-tidemancers.html">The Meralis Tidemancers</a></li>
+            <li><a href="locations/location-mirror-sea-reefs.html">Mirror Sea Reefs</a></li>
+            <li><a href="history/history-night-ten-auroras.html">The Night of Ten Auroras</a></li>
+            <li><a href="species/species-solarii-prismkin.html">The Solarii Prismkin</a></li>
+            <li><a href="characters/character-tarek-nine-lights.html">Tarek Nine-Lights</a></li>
+            <li><a href="species/species-veyari-echo-born.html">The Veyari Echo-Born</a></li>
+          </ul>
+        </details>
         <div class="sidebar-card">
           Species dossiers covering biology, culture, and interstellar alliances.
         </div>
       </aside>
 
       <div class="content">
+        <section class="global-search" role="search" aria-label="Global search">
+          <div class="global-search-header">
+            <h2>Global search</h2>
+            <p>Press / to focus and see instant results as you type.</p>
+          </div>
+          <div class="search-input-wrapper">
+            <input
+              class="search-input"
+              id="global-search-input"
+              name="global-search"
+              placeholder="Search entries, directories, or descriptors"
+              type="search"
+            />
+            <button class="search-clear" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div class="global-search-results" id="global-search-results" aria-live="polite"></div>
+        </section>
         <main id="main">
           <header class="reveal">
             <h1 class="page-title">Species Directory</h1>
