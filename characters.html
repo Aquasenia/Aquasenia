@@ -44,7 +44,7 @@
             </p>
           </header>
 
-          <section class="search-panel reveal">
+          <section class="search-panel reveal" data-filter-target="character-list">
             <h2>Search characters</h2>
             <form>
               <div class="search-field">
@@ -67,7 +67,7 @@
                 <div class="grid">
                   <div class="search-field">
                     <label for="character-role">Role</label>
-                    <select class="search-select" id="character-role" name="character-role">
+                    <select class="search-select" id="character-role" name="character-role" data-filter-key="role">
                       <option>All roles</option>
                       <option>Archivist</option>
                       <option>Envoy</option>
@@ -76,16 +76,16 @@
                   </div>
                   <div class="search-field">
                     <label for="character-era">Era</label>
-                    <select class="search-select" id="character-era" name="character-era">
+                    <select class="search-select" id="character-era" name="character-era" data-filter-key="era">
                       <option>All eras</option>
                       <option>Convergence Era</option>
-                      <option>Resonance Era</option>
+                      <option>Crystal Age</option>
                       <option>Radiant Age</option>
                     </select>
                   </div>
                   <div class="search-field">
                     <label for="character-lineage">Lineage</label>
-                    <select class="search-select" id="character-lineage" name="character-lineage">
+                    <select class="search-select" id="character-lineage" name="character-lineage" data-filter-key="lineage">
                       <option>All lineages</option>
                       <option>Veyari</option>
                       <option>Meralis</option>
@@ -94,11 +94,15 @@
                   </div>
                 </div>
               </div>
+              <div class="search-feedback">
+                <p class="results-count" aria-live="polite"></p>
+                <button class="filter-reset" type="button">Reset filters</button>
+              </div>
             </form>
           </section>
 
-          <section class="grid reveal">
-            <article class="card">
+          <section class="grid reveal" id="character-list">
+            <article class="card" data-filter-item data-role="Archivist" data-era="Convergence Era" data-lineage="Veyari">
               <div class="card-header">
                 <span class="card-tag">Archivist</span>
                 <div class="card-title">Liora Kesh</div>
@@ -113,7 +117,7 @@
                 <a class="button secondary" href="character-liora-kesh.html">Open dossier</a>
               </div>
             </article>
-            <article class="card">
+            <article class="card" data-filter-item data-role="Envoy" data-era="Crystal Age" data-lineage="Meralis">
               <div class="card-header">
                 <span class="card-tag">Envoy</span>
                 <div class="card-title">Tarek of the Nine Lights</div>
@@ -128,7 +132,7 @@
                 <a class="button secondary" href="character-tarek-nine-lights.html">Open dossier</a>
               </div>
             </article>
-            <article class="card">
+            <article class="card" data-filter-item data-role="Explorer" data-era="Radiant Age" data-lineage="Solarii">
               <div class="card-header">
                 <span class="card-tag">Explorer</span>
                 <div class="card-title">Asha Miraen</div>
@@ -143,18 +147,7 @@
                 <a class="button secondary" href="character-asha-miraen.html">Open dossier</a>
               </div>
             </article>
-          </section>
-
-          <section class="faq reveal">
-            <h2 class="page-title">FAQ</h2>
-            <details>
-              <summary>Are character dossiers spoiler-free?</summary>
-              <p>Each entry highlights key milestones without revealing unreleased story arcs.</p>
-            </details>
-            <details>
-              <summary>Can I follow a character's journey?</summary>
-              <p>Use the timeline filters to trace a character's major events across eras.</p>
-            </details>
+            <p class="empty-state" role="status" hidden>No characters match your filters yet.</p>
           </section>
         </main>
 

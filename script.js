@@ -35,6 +35,62 @@ const searchPanels = document.querySelectorAll(".search-panel");
 searchPanels.forEach((panel) => {
   const toggle = panel.querySelector(".filter-toggle");
   const filters = panel.querySelector(".search-filters");
+  const targetId = panel.dataset.filterTarget;
+  const target = targetId ? document.getElementById(targetId) : null;
+  const items = target ? Array.from(target.querySelectorAll("[data-filter-item]")) : [];
+  const resultsCount = panel.querySelector(".results-count");
+  const emptyState = target ? target.querySelector(".empty-state") : null;
+  const selects = Array.from(panel.querySelectorAll("[data-filter-key]"));
+  const searchInput = panel.querySelector(".search-input");
+  const resetButton = panel.querySelector(".filter-reset");
+
+  const normalize = (value) => value.trim().toLowerCase();
+  const applyFilters = () => {
+    if (!items.length) {
+      return;
+    }
+
+    const query = searchInput ? normalize(searchInput.value) : "";
+    let visibleCount = 0;
+
+    items.forEach((item) => {
+      let matches = true;
+
+      if (query) {
+        matches = normalize(item.textContent).includes(query);
+      }
+
+      if (matches) {
+        selects.forEach((select) => {
+          const key = select.dataset.filterKey;
+          const value = select.value;
+          if (!key || !value || value.startsWith("All")) {
+            return;
+          }
+
+          const itemValue = item.dataset[key] || "";
+          if (normalize(itemValue) !== normalize(value)) {
+            matches = false;
+          }
+        });
+      }
+
+      item.hidden = !matches;
+      if (matches) {
+        visibleCount += 1;
+      }
+    });
+
+    if (resultsCount) {
+      const total = items.length;
+      resultsCount.textContent = `Showing ${visibleCount} of ${total} ${total === 1 ? "entry" : "entries"}`;
+    }
+
+    if (emptyState) {
+      emptyState.hidden = visibleCount !== 0;
+    }
+  };
+
   if (toggle && filters) {
     toggle.addEventListener("click", () => {
       const isOpen = panel.classList.toggle("filters-open");
@@ -54,7 +110,10 @@ searchPanels.forEach((panel) => {
       wrapper.classList.toggle("is-filled", input.value.trim().length > 0);
     };
 
-    input.addEventListener("input", updateClearState);
+    input.addEventListener("input", () => {
+      updateClearState();
+      applyFilters();
+    });
     clearButton.addEventListener("click", () => {
       input.value = "";
       input.dispatchEvent(new Event("input", { bubbles: true }));
@@ -62,4 +121,23 @@ searchPanels.forEach((panel) => {
     });
     updateClearState();
   });
+
+  selects.forEach((select) => {
+    select.addEventListener("change", applyFilters);
+  });
+
+  if (resetButton) {
+    resetButton.addEventListener("click", () => {
+      if (searchInput) {
+        searchInput.value = "";
+        searchInput.dispatchEvent(new Event("input", { bubbles: true }));
+      }
+      selects.forEach((select) => {
+        select.selectedIndex = 0;
+      });
+      applyFilters();
+    });
+  }
+
+  applyFilters();
 });

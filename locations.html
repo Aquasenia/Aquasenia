@@ -44,7 +44,7 @@
             </p>
           </header>
 
-          <section class="search-panel reveal">
+          <section class="search-panel reveal" data-filter-target="location-list">
             <h2>Search locations</h2>
             <form>
               <div class="search-field">
@@ -67,7 +67,7 @@
                 <div class="grid">
                   <div class="search-field">
                     <label for="location-region">Region</label>
-                    <select class="search-select" id="location-region" name="location-region">
+                    <select class="search-select" id="location-region" name="location-region" data-filter-key="region">
                       <option>All regions</option>
                       <option>Skybound Terraces</option>
                       <option>Mirror Sea</option>
@@ -76,7 +76,7 @@
                   </div>
                   <div class="search-field">
                     <label for="location-era">Era</label>
-                    <select class="search-select" id="location-era" name="location-era">
+                    <select class="search-select" id="location-era" name="location-era" data-filter-key="era">
                       <option>All eras</option>
                       <option>Founding Dawn</option>
                       <option>Crystal Age</option>
@@ -85,7 +85,7 @@
                   </div>
                   <div class="search-field">
                     <label for="location-status">Status</label>
-                    <select class="search-select" id="location-status" name="location-status">
+                    <select class="search-select" id="location-status" name="location-status" data-filter-key="status">
                       <option>All statuses</option>
                       <option>Active</option>
                       <option>Shrouded</option>
@@ -94,11 +94,15 @@
                   </div>
                 </div>
               </div>
+              <div class="search-feedback">
+                <p class="results-count" aria-live="polite"></p>
+                <button class="filter-reset" type="button">Reset filters</button>
+              </div>
             </form>
           </section>
 
-          <section class="grid reveal">
-            <article class="card">
+          <section class="grid reveal" id="location-list">
+            <article class="card" data-filter-item data-region="Skybound Terraces" data-era="Founding Dawn" data-status="Active">
               <div class="card-header">
                 <span class="card-tag">Sky sanctuary</span>
                 <div class="card-title">The Aetheric Grove</div>
@@ -113,7 +117,7 @@
                 <a class="button secondary" href="location-aetheric-grove.html">Open dossier</a>
               </div>
             </article>
-            <article class="card">
+            <article class="card" data-filter-item data-region="Mirror Sea" data-era="Crystal Age" data-status="Shrouded">
               <div class="card-header">
                 <span class="card-tag">Oceanic</span>
                 <div class="card-title">Mirror Sea Reefs</div>
@@ -128,7 +132,7 @@
                 <a class="button secondary" href="location-mirror-sea-reefs.html">Open dossier</a>
               </div>
             </article>
-            <article class="card">
+            <article class="card" data-filter-item data-region="Obsidian Belt" data-era="Radiant Age" data-status="Active">
               <div class="card-header">
                 <span class="card-tag">Citadel</span>
                 <div class="card-title">Citadel of Nine Currents</div>
@@ -143,18 +147,7 @@
                 <a class="button secondary" href="location-citadel-nine-currents.html">Open dossier</a>
               </div>
             </article>
-          </section>
-
-          <section class="faq reveal">
-            <h2 class="page-title">FAQ</h2>
-            <details>
-              <summary>Are all locations open to travelers?</summary>
-              <p>No. Some realms are sealed or require resonance keys to access safely.</p>
-            </details>
-            <details>
-              <summary>How do I request a location update?</summary>
-              <p>Submit coordinates through the archive council for verification and cataloging.</p>
-            </details>
+            <p class="empty-state" role="status" hidden>No locations match your filters yet.</p>
           </section>
         </main>
 
