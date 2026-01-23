@@ -49,41 +49,49 @@
             <form>
               <div class="search-field">
                 <label for="species-search">Keyword search</label>
-                <input
-                  class="search-input"
-                  id="species-search"
-                  name="species-search"
-                  placeholder="Search by lineage, biome, or trait"
-                  type="search"
-                />
+                <div class="search-input-wrapper">
+                  <input
+                    class="search-input"
+                    id="species-search"
+                    name="species-search"
+                    placeholder="Search by lineage, biome, or trait"
+                    type="search"
+                  />
+                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
+                </div>
               </div>
-              <div class="grid">
-                <div class="search-field">
-                  <label for="species-origin">Origin realm</label>
-                  <select class="search-select" id="species-origin" name="species-origin">
-                    <option>All origins</option>
-                    <option>Skybound Terraces</option>
-                    <option>Mirror Sea</option>
-                    <option>Obsidian Belt</option>
-                  </select>
-                </div>
-                <div class="search-field">
-                  <label for="species-era">Era discovered</label>
-                  <select class="search-select" id="species-era" name="species-era">
-                    <option>All eras</option>
-                    <option>Founding Dawn</option>
-                    <option>Crystal Age</option>
-                    <option>Resonance Era</option>
-                  </select>
-                </div>
-                <div class="search-field">
-                  <label for="species-role">Primary role</label>
-                  <select class="search-select" id="species-role" name="species-role">
-                    <option>All roles</option>
-                    <option>Navigators</option>
-                    <option>Artisans</option>
-                    <option>Guardians</option>
-                  </select>
+              <button class="filter-toggle" type="button" aria-expanded="false">
+                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="search-filters">
+                <div class="grid">
+                  <div class="search-field">
+                    <label for="species-origin">Origin realm</label>
+                    <select class="search-select" id="species-origin" name="species-origin">
+                      <option>All origins</option>
+                      <option>Skybound Terraces</option>
+                      <option>Mirror Sea</option>
+                      <option>Obsidian Belt</option>
+                    </select>
+                  </div>
+                  <div class="search-field">
+                    <label for="species-era">Era discovered</label>
+                    <select class="search-select" id="species-era" name="species-era">
+                      <option>All eras</option>
+                      <option>Founding Dawn</option>
+                      <option>Crystal Age</option>
+                      <option>Resonance Era</option>
+                    </select>
+                  </div>
+                  <div class="search-field">
+                    <label for="species-role">Primary role</label>
+                    <select class="search-select" id="species-role" name="species-role">
+                      <option>All roles</option>
+                      <option>Navigators</option>
+                      <option>Artisans</option>
+                      <option>Guardians</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </form>

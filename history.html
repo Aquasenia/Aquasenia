@@ -49,41 +49,49 @@
             <form>
               <div class="search-field">
                 <label for="history-search">Keyword search</label>
-                <input
-                  class="search-input"
-                  id="history-search"
-                  name="history-search"
-                  placeholder="Search by event, treaty, or era"
-                  type="search"
-                />
+                <div class="search-input-wrapper">
+                  <input
+                    class="search-input"
+                    id="history-search"
+                    name="history-search"
+                    placeholder="Search by event, treaty, or era"
+                    type="search"
+                  />
+                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
+                </div>
               </div>
-              <div class="grid">
-                <div class="search-field">
-                  <label for="history-era">Era</label>
-                  <select class="search-select" id="history-era" name="history-era">
-                    <option>All eras</option>
-                    <option>Founding Dawn</option>
-                    <option>Crystal Age</option>
-                    <option>Convergence Era</option>
-                  </select>
-                </div>
-                <div class="search-field">
-                  <label for="history-theme">Theme</label>
-                  <select class="search-select" id="history-theme" name="history-theme">
-                    <option>All themes</option>
-                    <option>Diplomacy</option>
-                    <option>Conflict</option>
-                    <option>Discovery</option>
-                  </select>
-                </div>
-                <div class="search-field">
-                  <label for="history-scale">Scale</label>
-                  <select class="search-select" id="history-scale" name="history-scale">
-                    <option>All scales</option>
-                    <option>Interstellar</option>
-                    <option>Regional</option>
-                    <option>Local</option>
-                  </select>
+              <button class="filter-toggle" type="button" aria-expanded="false">
+                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="search-filters">
+                <div class="grid">
+                  <div class="search-field">
+                    <label for="history-era">Era</label>
+                    <select class="search-select" id="history-era" name="history-era">
+                      <option>All eras</option>
+                      <option>Founding Dawn</option>
+                      <option>Crystal Age</option>
+                      <option>Convergence Era</option>
+                    </select>
+                  </div>
+                  <div class="search-field">
+                    <label for="history-theme">Theme</label>
+                    <select class="search-select" id="history-theme" name="history-theme">
+                      <option>All themes</option>
+                      <option>Diplomacy</option>
+                      <option>Conflict</option>
+                      <option>Discovery</option>
+                    </select>
+                  </div>
+                  <div class="search-field">
+                    <label for="history-scale">Scale</label>
+                    <select class="search-select" id="history-scale" name="history-scale">
+                      <option>All scales</option>
+                      <option>Interstellar</option>
+                      <option>Regional</option>
+                      <option>Local</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </form>
