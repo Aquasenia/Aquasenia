@@ -49,41 +49,49 @@
             <form>
               <div class="search-field">
                 <label for="character-search">Keyword search</label>
-                <input
-                  class="search-input"
-                  id="character-search"
-                  name="character-search"
-                  placeholder="Search by name, title, or calling"
-                  type="search"
-                />
+                <div class="search-input-wrapper">
+                  <input
+                    class="search-input"
+                    id="character-search"
+                    name="character-search"
+                    placeholder="Search by name, title, or calling"
+                    type="search"
+                  />
+                  <button class="search-clear" type="button" aria-label="Clear search">×</button>
+                </div>
               </div>
-              <div class="grid">
-                <div class="search-field">
-                  <label for="character-role">Role</label>
-                  <select class="search-select" id="character-role" name="character-role">
-                    <option>All roles</option>
-                    <option>Archivist</option>
-                    <option>Envoy</option>
-                    <option>Explorer</option>
-                  </select>
-                </div>
-                <div class="search-field">
-                  <label for="character-era">Era</label>
-                  <select class="search-select" id="character-era" name="character-era">
-                    <option>All eras</option>
-                    <option>Convergence Era</option>
-                    <option>Resonance Era</option>
-                    <option>Radiant Age</option>
-                  </select>
-                </div>
-                <div class="search-field">
-                  <label for="character-lineage">Lineage</label>
-                  <select class="search-select" id="character-lineage" name="character-lineage">
-                    <option>All lineages</option>
-                    <option>Veyari</option>
-                    <option>Meralis</option>
-                    <option>Solarii</option>
-                  </select>
+              <button class="filter-toggle" type="button" aria-expanded="false">
+                Filters <span class="filter-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="search-filters">
+                <div class="grid">
+                  <div class="search-field">
+                    <label for="character-role">Role</label>
+                    <select class="search-select" id="character-role" name="character-role">
+                      <option>All roles</option>
+                      <option>Archivist</option>
+                      <option>Envoy</option>
+                      <option>Explorer</option>
+                    </select>
+                  </div>
+                  <div class="search-field">
+                    <label for="character-era">Era</label>
+                    <select class="search-select" id="character-era" name="character-era">
+                      <option>All eras</option>
+                      <option>Convergence Era</option>
+                      <option>Resonance Era</option>
+                      <option>Radiant Age</option>
+                    </select>
+                  </div>
+                  <div class="search-field">
+                    <label for="character-lineage">Lineage</label>
+                    <select class="search-select" id="character-lineage" name="character-lineage">
+                      <option>All lineages</option>
+                      <option>Veyari</option>
+                      <option>Meralis</option>
+                      <option>Solarii</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </form>
