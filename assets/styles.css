@@ -266,9 +266,9 @@ hr {
   gap: var(--space-2);
   padding: var(--space-2);
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(var(--color-accent-rgb), 0.08));
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
+  background: var(--color-surface-2);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
   animation: navGlow 800ms ease-out both;
 }
 
@@ -455,7 +455,7 @@ hr {
   background: var(--color-accent);
   color: #ffffff;
   font-weight: 600;
-  transition: background 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
+  transition: background 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out, box-shadow 150ms ease-out;
 }
 
 .button.secondary {
@@ -466,11 +466,13 @@ hr {
 
 .button:hover {
   background: var(--color-accent-strong);
+  box-shadow: 0 12px 20px rgba(var(--color-accent-strong-rgb), 0.3);
 }
 
 .button.secondary:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: var(--color-accent-strong);
+  color: var(--color-accent-strong);
+  background: rgba(var(--color-accent-rgb), 0.18);
 }
 
 .grid {
@@ -493,6 +495,15 @@ hr {
 .card:hover {
   background: var(--color-surface-2);
   border-color: rgba(var(--color-accent-rgb), 0.35);
+}
+
+.card-link:hover {
+  color: var(--color-text);
+}
+
+.card-link:hover .card-title,
+.card-link:hover .card-cta {
+  color: var(--color-accent-strong);
 }
 
 .card-link:focus-visible {
@@ -738,6 +749,12 @@ hr {
   border-radius: var(--radius-md);
   padding: var(--space-4);
   background: var(--color-surface);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.timeline details[open] {
+  border-color: rgba(var(--color-accent-rgb), 0.5);
+  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.08);
 }
 
 .timeline summary {
@@ -772,8 +789,20 @@ hr {
 }
 
 .timeline-card {
-  margin-top: var(--space-3);
   color: var(--color-muted);
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: max-height 280ms ease, opacity 280ms ease, transform 280ms ease, margin-top 280ms ease;
+}
+
+.timeline details[open] .timeline-card {
+  margin-top: var(--space-3);
+  max-height: 160px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .entry-actions {
