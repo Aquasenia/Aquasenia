@@ -39,10 +39,12 @@
   --color-border: rgba(17, 24, 39, 0.15);
   --color-accent: #7aa384;
   --color-accent-strong: #5f8468;
+  --color-accent-strongest: #4c6b55;
   --color-accent-muted: rgba(122, 163, 132, 0.18);
   --color-hover: rgba(122, 163, 132, 0.12);
   --color-accent-rgb: 122, 163, 132;
   --color-accent-strong-rgb: 95, 132, 104;
+  --color-accent-strongest-rgb: 76, 107, 85;
 }
 
 * {
@@ -216,7 +218,7 @@ hr {
 .brand-link {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  gap: var(--space-3);
   align-items: center;
   color: inherit;
   transition: color 200ms ease;
@@ -516,9 +518,10 @@ hr {
   transition: transform 380ms ease, opacity 380ms ease;
 }
 
-.button:hover {
-  background: var(--color-accent-strong);
-  box-shadow: 0 12px 20px rgba(var(--color-accent-strong-rgb), 0.3);
+.button:hover,
+.button:focus-visible {
+  background: var(--color-accent-strongest);
+  box-shadow: 0 12px 20px rgba(var(--color-accent-strongest-rgb), 0.38);
   transform: translateY(-2px) scale(1.01);
 }
 
@@ -535,8 +538,9 @@ hr {
 }
 
 .button:active {
+  background: var(--color-accent-strongest);
   transform: translateY(0);
-  box-shadow: 0 6px 12px rgba(var(--color-accent-strong-rgb), 0.22);
+  box-shadow: 0 6px 12px rgba(var(--color-accent-strongest-rgb), 0.3);
 }
 
 .button.secondary:active {
