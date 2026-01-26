@@ -61,3 +61,21 @@ timelineEntries.forEach((entry) => {
     }
   });
 });
+
+const cards = document.querySelectorAll(".card");
+if (cards.length > 0) {
+  const setSelectedCard = (selectedCard) => {
+    cards.forEach((card) => {
+      card.classList.toggle("is-selected", card === selectedCard);
+    });
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      setSelectedCard(card);
+    });
+    card.addEventListener("focusin", () => {
+      setSelectedCard(card);
+    });
+  });
+}
