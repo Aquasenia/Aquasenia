@@ -520,8 +520,10 @@ hr {
 
 .button:hover,
 .button:focus-visible {
-  background: var(--color-accent-strongest);
-  box-shadow: 0 12px 20px rgba(var(--color-accent-strongest-rgb), 0.38);
+  background: #ffffff;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 20px rgba(var(--color-accent-strong-rgb), 0.28);
   transform: translateY(-2px) scale(1.01);
 }
 
@@ -538,9 +540,11 @@ hr {
 }
 
 .button:active {
-  background: var(--color-accent-strongest);
+  background: #ffffff;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
   transform: translateY(0);
-  box-shadow: 0 6px 12px rgba(var(--color-accent-strongest-rgb), 0.3);
+  box-shadow: 0 6px 12px rgba(var(--color-accent-strong-rgb), 0.25);
 }
 
 .button.secondary:active {
