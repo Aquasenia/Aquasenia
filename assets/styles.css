@@ -1126,6 +1126,19 @@ hr {
 }
 
 @media (max-width: 700px) {
+  .accordion__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .accordion__header .accordion__icon-arrow {
+    align-self: flex-end;
+  }
+
+  .timeline__header-content {
+    width: 100%;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
