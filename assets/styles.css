@@ -411,8 +411,10 @@ hr {
 
 .content {
   padding: var(--space-8) clamp(var(--space-5), 6vw, var(--space-9)) var(--space-9);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-7);
+  min-height: 100vh;
   background: var(--color-surface);
   box-shadow: inset 1px 0 0 var(--color-border);
 }
@@ -423,6 +425,7 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  flex: 1;
 }
 
 .page-eyebrow {
