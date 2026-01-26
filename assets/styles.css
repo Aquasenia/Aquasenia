@@ -37,9 +37,9 @@
   --color-text: #111827;
   --color-muted: #4b5563;
   --color-border: rgba(17, 24, 39, 0.15);
-  --color-accent: #3b82f6;
-  --color-accent-strong: #1d4ed8;
-  --color-accent-muted: rgba(59, 130, 246, 0.18);
+  --color-accent: #7aa384;
+  --color-accent-strong: #5f8468;
+  --color-accent-muted: rgba(122, 163, 132, 0.18);
 }
 
 * {
