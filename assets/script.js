@@ -31,35 +31,72 @@ if ("IntersectionObserver" in window && revealElements.length > 0) {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
 
-const timelineEntries = document.querySelectorAll(".timeline details");
-timelineEntries.forEach((entry) => {
-  let closeTimer = null;
-  let ignoreToggle = false;
-  entry.addEventListener("toggle", () => {
-    if (ignoreToggle) {
-      ignoreToggle = false;
+const accordionElements = document.querySelectorAll(".js-accordion");
+accordionElements.forEach((accordionElement) => {
+  const items = Array.from(accordionElement.children).filter((child) =>
+    child.classList.contains("js-accordion__item")
+  );
+  const showClass = "accordion__item--is-open";
+  const allowMultiItems = accordionElement.getAttribute("data-multi-items") !== "off";
+
+  items.forEach((item, index) => {
+    const button = item.querySelector("button");
+    const content = item.querySelector(".js-accordion__panel");
+    if (!button || !content) {
       return;
     }
-    if (!entry.open) {
-      entry.classList.add("is-closing");
-      ignoreToggle = true;
-      entry.open = true;
-      if (closeTimer) {
-        window.clearTimeout(closeTimer);
-      }
-      closeTimer = window.setTimeout(() => {
-        entry.classList.remove("is-closing");
-        ignoreToggle = true;
-        entry.open = false;
-      }, 320);
-    } else {
-      entry.classList.remove("is-closing");
-      if (closeTimer) {
-        window.clearTimeout(closeTimer);
-        closeTimer = null;
-      }
-    }
+    const isOpen = item.classList.contains(showClass);
+    button.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    button.setAttribute("aria-controls", `accordion-content-${index}`);
+    button.setAttribute("id", `accordion-header-${index}`);
+    button.classList.add("js-accordion__trigger");
+    content.setAttribute("aria-labelledby", `accordion-header-${index}`);
+    content.setAttribute("id", `accordion-content-${index}`);
   });
+
+  accordionElement.addEventListener("click", (event) => {
+    const trigger = event.target.closest(".js-accordion__trigger");
+    if (!trigger) {
+      return;
+    }
+    const item = trigger.closest(".js-accordion__item");
+    if (!item || !items.includes(item)) {
+      return;
+    }
+    const isOpen = trigger.getAttribute("aria-expanded") === "true";
+    toggleAccordionItem(item, trigger, isOpen);
+  });
+
+  const toggleAccordionItem = (item, trigger, isOpen) => {
+    const content = item.querySelector(".js-accordion__panel");
+    const nextState = isOpen ? "false" : "true";
+
+    if (!isOpen) {
+      item.classList.add(showClass);
+    }
+    trigger.setAttribute("aria-expanded", nextState);
+    item.classList.toggle(showClass, !isOpen);
+    if (content) {
+      content.removeAttribute("style");
+    }
+    if (!allowMultiItems && !isOpen) {
+      closeSiblings(item);
+    }
+  };
+
+  const closeSiblings = (item) => {
+    if (allowMultiItems) {
+      return;
+    }
+    items.forEach((sibling) => {
+      if (sibling !== item && sibling.classList.contains(showClass)) {
+        const siblingTrigger = sibling.querySelector(".js-accordion__trigger");
+        if (siblingTrigger) {
+          toggleAccordionItem(sibling, siblingTrigger, true);
+        }
+      }
+    });
+  };
 });
 
 const cards = document.querySelectorAll(".card");
