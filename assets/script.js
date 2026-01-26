@@ -30,3 +30,34 @@ if ("IntersectionObserver" in window && revealElements.length > 0) {
 } else {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
+
+const timelineEntries = document.querySelectorAll(".timeline details");
+timelineEntries.forEach((entry) => {
+  let closeTimer = null;
+  let ignoreToggle = false;
+  entry.addEventListener("toggle", () => {
+    if (ignoreToggle) {
+      ignoreToggle = false;
+      return;
+    }
+    if (!entry.open) {
+      entry.classList.add("is-closing");
+      ignoreToggle = true;
+      entry.open = true;
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+      }
+      closeTimer = window.setTimeout(() => {
+        entry.classList.remove("is-closing");
+        ignoreToggle = true;
+        entry.open = false;
+      }, 320);
+    } else {
+      entry.classList.remove("is-closing");
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+    }
+  });
+});
