@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
   
-  <body data-base="">
+  <body data-base="../">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="layout">
       <aside class="sidebar">
         <div class="brand">
-          <a class="brand-link" href="index.html" aria-label="The Li'Ona Archives home">
+          <a class="brand-link" href="../index.html" aria-label="The Li'Ona Archives home">
             <span class="logo-icon" aria-hidden="true"><i class="fa-solid fa-feather"></i></span>
             <span class="logo">The Li'Ona Archives</span>
           </a>
@@ -45,10 +45,49 @@
         </nav>
       </aside>
 
-      
+      <div class="content">
+        <main id="main">
+          <header class="reveal">
+            <h1 class="page-title">Credits</h1>
+            <p class="page-subtitle">
+              Gratitude for the storytellers, tools, and inspirations that keep the Li'Ona Archives illuminated.
+            </p>
+          </header>
+
+          <section class="grid reveal" aria-label="Credits overview">
+            <article class="card">
+              <div class="card-header">
+                <p class="card-tag">Worldbuilding</p>
+                <div class="card-title">Narrative & Lore</div>
+              </div>
+              <p>
+                Stories, cultures, and timelines curated to celebrate the shimmering legacy of Li'Ona.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <p class="card-tag">Design</p>
+                <div class="card-title">Interface & Experience</div>
+              </div>
+              <p>
+                Layout, typography, and navigation crafted to keep exploration serene on every device.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <p class="card-tag">Resources</p>
+                <div class="card-title">Fonts & Icons</div>
+              </div>
+              <p>
+                Inter and Playfair Display from Google Fonts, paired with Font Awesome iconography.
+              </p>
+            </article>
+          </section>
+        </main>
+
         <footer class="footer">
           <div class="footer-links">
-            <a href="../index.html">Home</a>
+            <a href="archive-index.html">Index</a>
             <a href="species.html">Species</a>
             <a href="characters.html">Characters</a>
             <a href="history.html">History</a>
@@ -62,12 +101,12 @@
 
     <nav class="bottom-nav" aria-label="Primary">
       <a href="../index.html">Home</a>
-      <a href="archive-index.html" aria-current="page">Archive Index</a>
+      <a href="archive-index.html">Archive Index</a>
       <a href="species.html">Species</a>
       <a href="characters.html">Characters</a>
       <a href="history.html">History</a>
       <a href="locations.html">Locations</a>
-      <a href="credits.html">Credits</a>
+      <a href="credits.html" aria-current="page">Credits</a>
     </nav>
 
     <script src="../assets/script.js"></script>
