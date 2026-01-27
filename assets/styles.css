@@ -714,15 +714,20 @@ hr {
   gap: var(--space-5);
 }
 
-.index-card .icon-badge {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: var(--color-accent-muted);
-  color: var(--color-accent);
-  display: grid;
-  place-items: center;
-  font-weight: 600;
+.index-card .index-card-glyph {
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgba(var(--color-accent-rgb), 0.4);
+  border-radius: 6px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  align-self: start;
+  margin-top: 4px;
+}
+
+.index-card:hover .index-card-glyph,
+.index-card:focus-within .index-card-glyph {
+  transform: rotate(225deg);
 }
 
 .index-card {
@@ -734,8 +739,8 @@ hr {
 
 .index-card .index-card-header {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--space-4);
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-5);
   align-items: start;
 }
 
