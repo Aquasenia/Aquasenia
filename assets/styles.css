@@ -725,6 +725,13 @@ hr {
   font-weight: 600;
 }
 
+.index-card {
+  padding: var(--space-4);
+  gap: var(--space-3);
+  min-height: unset;
+  aspect-ratio: auto;
+}
+
 .index-card .index-card-header {
   display: grid;
   grid-template-columns: auto 1fr;
