@@ -557,7 +557,7 @@ hr {
 .grid {
   display: grid;
   gap: var(--space-5);
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .card {
@@ -567,6 +567,8 @@ hr {
   padding: var(--space-5);
   display: grid;
   gap: var(--space-4);
+  aspect-ratio: 5 / 3;
+  min-height: 180px;
   box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
